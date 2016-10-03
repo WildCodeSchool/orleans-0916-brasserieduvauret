@@ -1,0 +1,91 @@
+/*Partie Jumbotron*/
+.jumbotron {
+    padding:30px 15px;
+    margin-bottom:30px;
+    background-image: url('jumbo1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 700px;
+    width:100%;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.slogan {
+    margin-top: 15%;
+    font-family: 'Pacifico', cursive;
+    font-size: 100px;
+}
+
+/*Partie icônes animées*/
+.bloc1 {
+    margin-top: 60px;
+}
+
+.icone1 {
+    border: 12px solid;
+    border-radius: 100px 100px 100px 100px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin-left: 19%;
+
+
+}
+.icone2 {
+    border: 12px solid;
+    border-radius: 100px 100px 100px 100px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin-left: 15%;
+
+}
+.icone3 {
+    border: 12px solid;
+    border-radius: 100px 100px 100px 100px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin-left: 14%;
+
+}
+.glyphicon-info-sign {
+    margin: 40% auto 50% auto;
+    color: #5ec6c9;
+}
+.glyphicon-home {
+    margin: 40% auto 50% auto;
+    color: #5ec6c9;
+}
+.glyphicon-music {
+    margin: 40% auto 50% auto;
+    color: #5ec6c9;
+}
+.hover_color{
+    font-weight:bold;
+    font-size:60px;
+    color : #FF1300;
+    cursor:pointer;
+    transition: color 1s;
+    -moz-transition: color 1s; /* Firefox 4 */
+    -webkit-transition: color 1s; /* Safari and Chrome */
+    -o-transition: color 1s; /* Opera */
+}
+
+.hover_color:hover{
+    color : #FF9500;
+    transition: color 0.5s;
+    -moz-transition: color 0.5s; /* Firefox 4 */
+    -webkit-transition: color 0.5s; /* Safari and Chrome */
+    -o-transition: color 0.5s; /* Opera */
+}
+
+/*Bloc de texte*/
+.text1 {
+    text-align: justify;
+    margin-top: 60px;
+}
