@@ -1,9 +1,7 @@
 h2 {
     text-align:center;
     padding-bottom: 30px;
-    
-
-}
+    }
 
 /*.image_une {
     
@@ -15,14 +13,7 @@ h2 {
     min-width: 300px;
 }
 
-[class*="col-"], footer {
-  background-color: lightgreen;
-  border: 2px solid black;
-  border-radius: 6px;
-  line-height: 40px;
-  text-align: center;
-}
 
-.contact {
-    text-align:center;
+.image_une {
+    margin-bottom: 10px;
 }
