@@ -3,14 +3,27 @@
 	
 }
 
+
+.logo{
+	margin-top:-9%;
+}
 /*
 .navbar-default .navbar-nav > li > a {
 font-weight: bold;
 }
 */
 
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    	color: #555;
+    	background-color: #ff9500;
+}
 
 	
+	.navbar-default .navbar-nav > li > a {
+	color: #ffffff;
+	/* font-weight: bold; */
+	font-size: 1.6rem;
+}
 
 
 

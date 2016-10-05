@@ -31,17 +31,9 @@
 
 
 <style>
-	.navbar-default .navbar-nav > li > a {
-	color: #ffffff;
-	/* font-weight: bold; */
-	font-size: 1.6rem;
-}
 
 	
-	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    	color: #555;
-    	background-color: #ff9500;
-}
+
 
 </style>
 
@@ -74,7 +66,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="#"  alt="logo Brasserie" ></a>
+
+<div class="logo">
+      <a class="navbar-brand" href="#"><img class="img-responsive" src="logo159x50px.png"  alt="logo Brasserie" ></a></div>
     </div>
 
 
@@ -90,7 +84,7 @@
 
 
 	
-        <li class="active"><a href="#">Brasserie du Vauret <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="#">Accueil <span class="sr-only">(current)</span></a></li>
 	       
 	<li><a href="#">Nos bières</a></li>
 	<li><a href="#">La Brasserie</a></li>
