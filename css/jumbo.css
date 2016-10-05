@@ -26,7 +26,7 @@
 }
 
 .icone1 {
-    border: 12px solid;
+    border: 5px solid;
     border-radius: 100px 100px 100px 100px;
     height: 200px;
     width: 200px;
@@ -34,9 +34,10 @@
     margin-left: 19%;
 
 
+
 }
 .icone2 {
-    border: 12px solid;
+    border: 5px solid;
     border-radius: 100px 100px 100px 100px;
     height: 200px;
     width: 200px;
@@ -45,7 +46,7 @@
 
 }
 .icone3 {
-    border: 12px solid;
+    border: 5px solid;
     border-radius: 100px 100px 100px 100px;
     height: 200px;
     width: 200px;
@@ -55,15 +56,19 @@
 }
 .glyphicon-info-sign {
     margin: 40% auto 50% auto;
-    color: #5ec6c9;
+    color: #47c1c2;
 }
 .glyphicon-home {
     margin: 40% auto 50% auto;
-    color: #5ec6c9;
+    color: #47c1c2;
 }
 .glyphicon-music {
     margin: 40% auto 50% auto;
-    color: #5ec6c9;
+    color: #47c1c2;
+}
+.center_icons {
+    margin-top: 35%;
+    color: #47c1c2;
 }
 .hover_color{
     font-weight:bold;

@@ -3,13 +3,12 @@
         <title>jumbo</title>
         <meta charset="utf-8">
         <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link type="text/css" rel="stylesheet" href="./css/style.css">
+        <link type="text/css" rel="stylesheet" href="./css/jumbo.css">
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
     </head>
     <body>
-
     <!--Bloc Jumbotron -->
 
         <div class="jumbotron jumbotron-fluid">
@@ -28,14 +27,14 @@
         <div class="container-fluid row bloc1">
             <a class="hover_color" href="#">
             <div class="col-lg-offset-2 col-lg-2 col-md-offset-1 col-md-6 col-xs-offset-1 col-xs-12 icone1">
-                <div class="glyphicon glyphicon-info-sign center_icons">
+                <div class="glyphicon glyphicon-tower center_icons">
 
                 </div>
             </div>
             </a>
             <a class="hover_color" href="#">
             <div class="col-lg-offset-2 col-lg-2 col-md-offset-1 col-md-6 col-xs-offset-1 col-xs-12 icone2">
-                <div class="glyphicon glyphicon-home center_icons">
+                <div class="glyphicon glyphicon-glass center_icons">
 
                 </div>
 
@@ -43,7 +42,7 @@
             </a>
             <a class="hover_color" href="#">
             <div class="col-lg-offset-2 col-lg-2 col-md-offset-1 col-md-6 col-xs-offset-1 col-xs-12 icone3">
-                <div class="glyphicon glyphicon-music center_icons">
+                <div class="glyphicon glyphicon-road center_icons">
 
                 </div>
 
@@ -67,6 +66,7 @@
                     Fusce tincidunt neque eu metus sagittis condimentum. Nunc vehicula tincidunt ante eget mattis.</p>
             </div>
         </div>
+
     </body>
 
 </html>
