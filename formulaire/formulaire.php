@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formulaire</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -13,15 +14,13 @@
 </head>
 
 <body>
-  
-        
-            <!---Formulaire de contact------>
-            <h2 class="contact">Contactez-nous !</h2>
-            
-            
+   
+   
+    <!---Formulaire de contact------>
+    <h2 class="contact">Contactez-nous !</h2>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+            <div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
                 <form>
                     <div class="form-group">
                         <label for="nom">Nom</label>
@@ -36,19 +35,17 @@
                         <label for="telephone">Téléphone</label>
                         <input type="Telephone" class="form-control" id="Telephone" placeholder="Telephone"> </div>
             </div>
-        
-        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-            <div class="text-area">
-                <label for="text-area">Commentaire</label>
-                <textarea class="form-control" rows="9"></textarea>
+            <div class="col-md-5 col-sm-12 col-xs-12">
+                <div class="text-area">
+                    <label for="text-area">Commentaire</label>
+                    <textarea class="form-control" rows="9"></textarea>
+                </div>
+                <div class="bouton">
+                    <button type="submit" class="btn btn-primary btn-lg ">Envoyer <span class="glyphicon glyphicon-send"></span></button>
+                </div>
             </div>
-            <div class="bouton">
-                <button type="submit" class="btn btn-primary btn-lg ">Envoyer</button>
-            </div>
+            </form>
         </div>
-        </form>
-    </div>
-    </div>
     </div>
     <!---Fin Formulaire de contact------>
 </body>
