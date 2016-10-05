@@ -32,6 +32,7 @@
     width: 200px;
     text-align: center;
     margin-left: 19%;
+    background-color: #FF1300;
 
 
 
@@ -43,6 +44,7 @@
     width: 200px;
     text-align: center;
     margin-left: 15%;
+    background-color: #FF1300;
 
 }
 .icone3 {
@@ -52,6 +54,7 @@
     width: 200px;
     text-align: center;
     margin-left: 14%;
+    background-color: #FF1300;
 
 }
 .glyphicon-info-sign {
@@ -68,7 +71,7 @@
 }
 .center_icons {
     margin-top: 35%;
-    color: #47c1c2;
+    color: white;
 }
 .hover_color{
     font-weight:bold;
@@ -94,3 +97,10 @@
     text-align: justify;
     margin-top: 60px;
 }
+.inter_bloc {
+    background-image: url("../img/inter1.JPG");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
