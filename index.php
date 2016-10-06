@@ -5,12 +5,26 @@
             <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
             <link rel="stylesheet" type="text/css" href="css/jumbo.css">
             <link rel="stylesheet" type="text/css" href="css/formulaire.css">
+            <link rel="stylesheet" type="text/css" href="css/content.css">
+            <link rel="stylesheet" type="text/css" href="css/stylenavbar.css">
             <script src="js/bootstrap.min.js"></script>
         </head>
         <body>
+            <div class="navbar1">
+                <?php
+                include 'pages/navbar.php';
+                ?>
+            </div>
             <?php
                 include 'pages/jumbo.php';
-                include 'pages/formulaire.php'
+                include 'pages/fil_actualite.php';
+            ?>
+            <div class="container-fluid row inter_bloc">
+
+
+            </div>
+            <?php
+                include 'pages/formulaire.php';
             ?>
         </body>
     </html>
