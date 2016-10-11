@@ -3,7 +3,7 @@
 
         <div class="jumbotron jumbotron-fluid">
             <div class="container-fluid">
-                <h1 class="display-3 slogan">"Phrase d'accroche bière"</h1>
+                <h1 class="display-3 slogan">"Bientôt dans votre verre !"</h1>
             </div>
         </div>
         <div class="rows icones">

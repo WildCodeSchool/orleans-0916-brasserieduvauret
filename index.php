@@ -8,8 +8,8 @@
             <link rel="stylesheet" type="text/css" href="css/formulaire.css">
             <link rel="stylesheet" type="text/css" href="css/content.css">
             <link rel="stylesheet" type="text/css" href="css/stylenavbar.css">
-
-              <link rel="stylesheet" type="text/css" href="css/fonts.css">
+            <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet"> 
+            <link rel="stylesheet" type="text/css" href="css/fonts.css">
 
 
 
