@@ -94,8 +94,12 @@
 
 Bloc de texte
 .text1 {
-    text-align: justify;
+    text-align: center;
     margin-top: 60px;
+}
+.text_icon {
+    text-align: center;
+    margin: 30px;
 }
 .inter_bloc {
     background-image: url('../img/full3.jpg');
