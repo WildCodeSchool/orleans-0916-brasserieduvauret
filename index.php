@@ -8,8 +8,12 @@
             <link rel="stylesheet" type="text/css" href="css/formulaire.css">
             <link rel="stylesheet" type="text/css" href="css/content.css">
             <link rel="stylesheet" type="text/css" href="css/stylenavbar.css">
-            <link rel="stylesheet" type="text/css" href="css/stylenavbar.css">
+
               <link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+
+
+
             <script src="js/bootstrap.min.js"></script>
         </head>
         <body>
@@ -38,5 +42,8 @@
             <?php
                 include 'pages/formulaire.php';
             ?>
+            <footer>
+          
+            </footer>
         </body>
     </html>
