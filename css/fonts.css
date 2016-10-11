@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'lane_-_narrowregular';
+    src: url('../fonts/lane-narrow/LANENAR_-webfont.eot');
+    src: url('../fonts/lane-narrow/LANENAR_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lane-narrow/LANENAR_-webfont.woff') format('woff'),
+         url('../fonts/lane-narrow/LANENAR_-webfont.ttf') format('truetype'),
+         url('../fonts/lane-narrow/LANENAR_-webfont.svg#lane_-_narrowregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+.text_icon {
+    font-family:'lane_-_narrowregular';
+    color: black;
+    
+}

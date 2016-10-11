@@ -41,19 +41,14 @@
         </div>
         <div class="container-fluid row bloc-text">
             <div class="col-lg-offset-2 col-lg-2 col-md-offset-1 col-md-6 col-xs-offset-1 col-xs-12 text1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam est, porttitor at lectus vitae,
-                    pretium consequat diam. Cras nec diam vitae lectus varius lacinia eu a nisl. Proin tempor lobortis nibh non iaculis.
-                    Fusce tincidunt neque eu metus sagittis condimentum. Nunc vehicula tincidunt ante eget mattis.</p>
+                <p class="text_icon">La brasserie du Vauret est une brasserie artisanale à Mardié près d'Orléans dans le Loiret.</p>
             </div>
             <div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-6 col-xs-offset-1 col-xs-12 text1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam est, porttitor at lectus vitae,
-                    pretium consequat diam. Cras nec diam vitae lectus varius lacinia eu a nisl. Proin tempor lobortis nibh non iaculis.
-                    Fusce tincidunt neque eu metus sagittis condimentum. Nunc vehicula tincidunt ante eget mattis.</p>
+                <p class="text_icon">Nous produisons des bières bio en flux détendu avec amour et musicalité.
+                </p>
             </div>
             <div class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-6 col-xs-offset-1 col-xs-12 text1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam est, porttitor at lectus vitae,
-                    pretium consequat diam. Cras nec diam vitae lectus varius lacinia eu a nisl. Proin tempor lobortis nibh non iaculis.
-                    Fusce tincidunt neque eu metus sagittis condimentum. Nunc vehicula tincidunt ante eget mattis.</p>
+                <p class="text_icon">Les bières sont non filtrées, non pasteurisées et refermentées en bouteille</p>
             </div>
         </div>
         <div class="container-fluid row inter_bloc">
