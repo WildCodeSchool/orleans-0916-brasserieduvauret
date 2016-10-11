@@ -1,25 +1,34 @@
 .babar {
-	background-color:#ff9500;
+	background-color:#67a830;
 	
 }
 
 
 .logo{
-	margin-top:-9%;
+	
+
 }
 
 	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     	color: #555;
-    	background-color: #ff9500;
+    	background-color: #67a830;
+	font-size: 30px;
 }
 
 	
 	.navbar-default .navbar-nav > li > a {
 	color: #ffffff;
 	/* font-weight: bold; */
-	font-size: 1.6rem;
-}
+	font-size: 30px;
+	margin-top: 15px;
+	
 
+}
+.liste_menu {
+	height: 100px;
+	font-size: 40px;
+	margin-top: 10px;
+}
 
 
 

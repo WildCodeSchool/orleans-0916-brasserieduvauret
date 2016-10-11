@@ -35,13 +35,13 @@
 
 
 	
-        <li class="active"><a href="#">Accueil <span class="sr-only">(current)</span></a></li>
+        <li class="active liste_menu"><a href="#">Accueil <span class="sr-only">(current)</span></a></li>
 	       
-	<li><a href="#">Nos bières</a></li>
-	<li><a href="#">La Brasserie</a></li>
-      	<li><a href="#">Points de vente</a></li>
-	<li><a href="#">Actualités</a></li>
-	<li><a href="#">Contact</a></li>
+	<li class="liste_menu"><a href="#">Nos bières</a></li>
+	<li class="liste_menu"><a href="#">La Brasserie</a></li>
+      	<li class="liste_menu"><a href="#">Points de vente</a></li>
+	<li class="liste_menu"><a href="#">Actualités</a></li>
+	<li class="liste_menu"><a href="#">Contact</a></li>
 
 
 	</ul>

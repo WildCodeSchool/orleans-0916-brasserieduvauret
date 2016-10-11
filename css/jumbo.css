@@ -2,7 +2,7 @@
 .jumbotron {
     padding:30px 15px;
     margin-bottom:30px;
-    background-image: url('jumbo1.jpg');
+    background-image: url('../img/une.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 700px;
@@ -79,26 +79,26 @@
     color : #FF1300;
     cursor:pointer;
     transition: color 1s;
-    -moz-transition: color 1s; /* Firefox 4 */
-    -webkit-transition: color 1s; /* Safari and Chrome */
-    -o-transition: color 1s; /* Opera */
+    -moz-transition: color 1s; 
+    -webkit-transition: color 1s; 
+    -o-transition: color 1s; 
 }
 
 .hover_color:hover{
     color : #FF9500;
     transition: color 0.5s;
-    -moz-transition: color 0.5s; /* Firefox 4 */
-    -webkit-transition: color 0.5s; /* Safari and Chrome */
-    -o-transition: color 0.5s; /* Opera */
+    -moz-transition: color 0.5s; 
+    -webkit-transition: color 0.5s; 
+    -o-transition: color 0.5s; 
 }
 
-/*Bloc de texte*/
+Bloc de texte
 .text1 {
     text-align: justify;
     margin-top: 60px;
 }
 .inter_bloc {
-    background-image: url("../img/inter1.JPG");
+    background-image: url('../img/fullbeer.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 500px;
