@@ -8,11 +8,12 @@ h2 {
 .image_une {
     margin-bottom: 10px;
 }
+
 html,
 body {
     height: 100%;
-
 }
+
 .wrapper {
     width: 80%;
     height: 100%;
