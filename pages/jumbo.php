@@ -4,7 +4,7 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container-fluid">
                 <div class="row">
-                    <h1 class="display-3 slogan">"Bientôt dans votre verre !"</h1>
+                    <h1 class="display-3 slogan2">"Bientôt dans votre verre !"</h1>
                 </div>
             </div>
         </div>

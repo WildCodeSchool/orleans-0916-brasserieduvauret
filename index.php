@@ -14,6 +14,7 @@
             <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet"> 
             <link rel="stylesheet" type="text/css" href="css/fonts.css">
             <link rel="stylesheet" type="text/css" href="css/footer.css">
+            <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
             <script src="js/bootstrap.min.js"></script>
         </head>
         <body>
