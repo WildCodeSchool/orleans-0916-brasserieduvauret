@@ -1,16 +1,16 @@
 /*Partie Jumbotron*/
 .jumbotron {
-    padding:30px 15px;
-    margin-bottom:30px;
+
+
     background-image: url('../img/une.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 700px;
+    height: 900px;
     width:100%;
     color: white;
     text-shadow: 3px 3px 3px black;
     text-align: center;
-    margin-bottom: 30px;
+
 
 }
 
@@ -22,7 +22,8 @@
 
 /*Partie icônes animées*/
 .bloc1 {
-    margin-top: 60px;
+    margin-top: 200px;
+    height: 400px;
 }
 
 .icone1 {
@@ -58,15 +59,15 @@
 
 }
 .glyphicon-info-sign {
-    margin: 40% auto 50% auto;
+    margin: 40% auto 0 auto;
     color: #47c1c2;
 }
 .glyphicon-home {
-    margin: 40% auto 50% auto;
+    margin: 40% auto 0 auto;
     color: #47c1c2;
 }
 .glyphicon-music {
-    margin: 40% auto 50% auto;
+    margin: 40% auto 0 auto;
     color: #47c1c2;
 }
 .center_icons {
@@ -92,10 +93,10 @@
     -o-transition: color 0.5s; 
 }
 
-Bloc de texte
-.text1 {
+.bloc-text {
     text-align: center;
-    margin-top: 60px;
+    margin-top: -130px;
+    font-size: 25px;
 }
 .text_icon {
     text-align: center;
@@ -106,5 +107,19 @@ Bloc de texte
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 500px;
+    padding: 0;
 }
-
+.inter_bloc2 {
+    background-image: url('../img/inter2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 0;
+}
+.inter_bloc3 {
+    background-image: url('../img/inter3.JPG');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 0;
+}

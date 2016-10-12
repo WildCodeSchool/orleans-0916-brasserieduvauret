@@ -1,7 +1,22 @@
-footer {
-	background-image: url('../img/footfond.png');
-	height: 400px;
+.foot-contact {
+	text-align: center;
 }
-.footitle {
-	color: blue;
+.foot-back {
+	background-color: grey;
+}
+.foot-logofb {
+	height: 50px;
+	width: 50px;
+	margin-left: 40%;
+}
+.foot-input {
+	margin: 40px auto auto 20%;
+}
+.foot-list {
+	list-style-type: none;
+	margin-top: 30px;
+
+}
+li {
+	color: white;
 }

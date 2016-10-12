@@ -10,6 +10,7 @@
             <link rel="stylesheet" type="text/css" href="css/stylenavbar.css">
             <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet"> 
             <link rel="stylesheet" type="text/css" href="css/fonts.css">
+            <link rel="stylesheet" type="text/css" href="css/footer.css">
 
 
 
@@ -26,7 +27,7 @@
                 include 'pages/jumbo.php';
                 include 'pages/fil_actualite.php';
             ?>
-            <div class="container-fluid row inter_bloc">
+            <div class="container-fluid row inter_bloc2">
 
 
             </div>
@@ -35,7 +36,7 @@
                 include 'pages/map.php';
             ?>
 
-             <div class="container-fluid row inter_bloc">
+             <div class="container-fluid row inter_bloc3">
 
 
             </div>
@@ -43,7 +44,9 @@
                 include 'pages/formulaire.php';
             ?>
             <footer>
-          
+                <?php
+                    include 'pages/footer.php';
+                ?>
             </footer>
         </body>
     </html>
