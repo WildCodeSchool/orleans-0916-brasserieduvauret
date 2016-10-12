@@ -8,7 +8,7 @@ p {
   font-weight: 400;
 }
 h4 {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: bold;
   margin-top: 35%;
 }
@@ -29,7 +29,7 @@ h4 {
   width: 280px;
   height: 280px;
   display: inline-block;
-  margin: 9%;
+  margin: 2% 9% 9% 9%;
 }
 .ch-grid:before, .ch-grid:after {
   content: '';
@@ -97,8 +97,8 @@ h4 {
 }
 
 .ch-info .ch-info-front {
-  background-color: rgba(232, 232, 221, 0.5);
-  box-shadow: 0 0 0 10px rgba(232, 232, 221, 0.2), 0 0 0 3px #e8e8dd;
+  background-color: rgba(255, 222, 115, 0.9);
+  box-shadow: 0 0 0 10px rgba(255, 222, 115, 0.5), 0 0 0 3px #e8e8dd;
 }
 
 .ch-info-front {
@@ -119,7 +119,7 @@ h4 {
   -o-transform: translate3d(0, 0, -180px) rotate3d(1, 0, 0, 90deg);
   -ms-transform: translate3d(0, 0, -180px) rotate3d(1, 0, 0, 90deg);
   transform: translate3d(0, 0, -180px) rotate3d(1, 0, 0, 90deg);
-  background-color: #14c09f;
+  background-color: #f02d17;
   box-shadow: 0 0 0 10px rgba(232, 232, 221, 0.2), 0 0 0 3px #fff;
   opacity: 0;
 }
@@ -152,3 +152,31 @@ h4 {
 .ch-info-back > a:hover {
   background: url(http://i57.tinypic.com/li6bs.png) 0 -25px no-repeat;
 }
+.flip-img {
+  height: 170px;
+  width: 170px;
+  margin-top: 12%;
+}
+.flip-title {
+  text-align: center;
+  font-family:'Spicy Rice', cursive;
+  font-size: 50px;
+
+}
+.flip-title2 {
+  text-align: center;
+  font-family:'Spicy Rice', cursive;
+
+}
+.slogan2 {
+  font-family:'Spicy Rice', cursive;
+  color: #ffffff;
+  text-align: center;
+  font-size: 100px;
+  margin-top: 18%;
+  text-shadow: 3px 3px 3px black;
+}
+
+
+
+

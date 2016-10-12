@@ -37,7 +37,7 @@
             ?>
             <div class="container-fluid row inter_bloc2">
 
-
+                <h1 class="slogan2">"Les bières sont non filtrées,</br>non pasteurisées et refermentées en bouteille"</h1>
             </div>
 
             <?php
@@ -45,7 +45,7 @@
             ?>
 
              <div class="container-fluid row inter_bloc3">
-
+                <h1 class="slogan2">"Nous produisons des bières bio en flux détendu"</h1>
 
             </div>
             <?php
