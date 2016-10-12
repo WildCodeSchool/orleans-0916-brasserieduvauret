@@ -1,3 +1,4 @@
+
 <script>
     $(document).ready(function () {
         $(".navbar-toggle").on("click", function () {
@@ -5,6 +6,7 @@
         });
     });
 </script>
+
 <div class="navbar navbar navbar-fixed">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Brasserie du Vauret</a> </div>
@@ -19,3 +21,8 @@
         </ul>
     </div>
 </div>
+
+
+		
+
+
