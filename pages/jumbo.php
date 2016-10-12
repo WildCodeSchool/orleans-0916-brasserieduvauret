@@ -14,7 +14,7 @@
             </div>
         </div>
 
-    <!-- Bloc icones animées -->
+    <!-- Bloc icones animées
 
         <div class="container-fluid row bloc1">
             <a class="hover_color" href="#">
@@ -41,6 +41,8 @@
             </div>
             </a>
         </div>
+ -->
+        <!--
         <div class="container-fluid row bloc-text">
             <div class="col-lg-offset-2 col-lg-2 col-md-offset-1 col-md-6 col-xs-offset-1 col-xs-12 text1">
                 <p class="text_icon">La brasserie du Vauret est une brasserie artisanale à Mardié près d'Orléans dans le Loiret.</p>
@@ -57,4 +59,6 @@
 
 
         </div>
+        -->
+        
 

@@ -7,12 +7,13 @@ h2 {
 }
 .image_une {
     margin-bottom: 10px;
+    height: 600px;
 }
 
 html,
 body {
     height: 100%;
-    margin: 0 auto:
+    margin: 0 auto;
 }
 
 .wrapper {

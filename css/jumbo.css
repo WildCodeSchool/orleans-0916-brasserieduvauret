@@ -106,20 +106,22 @@
     background-image: url('../img/full3.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 800px;
     padding: 0;
 }
 .inter_bloc2 {
     background-image: url('../img/inter2.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 800px;
     padding: 0;
 }
 .inter_bloc3 {
     background-image: url('../img/inter3.JPG');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 800px;
     padding: 0;
 }
+
+/*Bloc icones animées "Flip"*/
