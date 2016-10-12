@@ -1,3 +1,11 @@
+.nav {
+    margin-top: 40px;
+}
+
+.navbar-brand {
+    margin-top: 15px;
+  margin-bottom: 50px;
+}
 
 .navbar-toggle .icon-bar:nth-of-type(1) {
 	  top: 1px;
@@ -39,3 +47,10 @@
 	  top: -6px;
 	  transform: rotate(-45deg);
 }
+
+.onglet {
+    font-family:'Spicy Rice', cursive;;
+    color:black;
+    font-size: 25px;
+}
+
