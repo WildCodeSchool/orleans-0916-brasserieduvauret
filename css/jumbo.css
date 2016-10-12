@@ -5,6 +5,8 @@
     background-image: url('../img/une.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
     height: 900px;
     width:100%;
     color: white;
@@ -106,6 +108,8 @@
     background-image: url('../img/full3.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     height: 800px;
     padding: 0;
 }
@@ -113,6 +117,8 @@
     background-image: url('../img/inter2.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position :center center;
+    background-size: cover;
     height: 800px;
     padding: 0;
 }
@@ -120,6 +126,8 @@
     background-image: url('../img/inter3.JPG');
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     height: 800px;
     padding: 0;
 }
