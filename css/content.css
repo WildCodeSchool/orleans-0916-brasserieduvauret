@@ -1,4 +1,7 @@
-
+.trait
+    {
+    border-left: thick solid #ff0000;
+    }
 
 h2 {
     text-align: center;
