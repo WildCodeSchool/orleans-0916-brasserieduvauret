@@ -37,3 +37,7 @@ body {
     width: 100%;
     height: 100%;
 }
+.barre {
+    border-right: 4px solid grey;
+    height: 500px;
+}

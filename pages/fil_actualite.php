@@ -12,8 +12,10 @@
             <div class="col-lg-offset-2 col-lg-3 col-md-offset-3 col-md-5 col-sm-offset-3 col-sm-9 col-xs-12">
                 <a href="#"> <img class="img-responsive" src="image/test_a_la_une.png" alt="La bière à la une"></a>
             </div>
+            <div class="col-lg-1 barre">
+            </div>
             <!--module facebook-->
-            <div class="col-lg-offset-2 col-lg-5 col-md-offset-3 col-md-5 col-sm-offset-3 col-sm9 col-xs-12" class="facebook">
+            <div class="col-lg-offset-1 col-lg-5 col-md-offset-3 col-md-5 col-sm-offset-3 col-sm9 col-xs-12" class="facebook">
 
                                    <!--iframe debut-->
                 <div class="embed-responsive embed-responsive-16by9">
