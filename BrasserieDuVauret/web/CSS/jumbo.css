@@ -1,0 +1,136 @@
+/*Partie Jumbotron*/
+.jumbotron {
+
+
+    background-image: url('web/img/une.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 900px;
+    width:100%;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+
+
+}
+
+.slogan2 {
+    margin-top: 15%;
+    font-size: 150px;
+}
+
+/*Partie icônes animées*/
+.bloc1 {
+    margin-top: 200px;
+    height: 400px;
+}
+
+.icone1 {
+    border: 25px solid;
+    border-radius: 100px 100px 100px 100px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin-left: 19%;
+    background-color: #FF1300;
+
+
+
+}
+.icone2 {
+    border: 25px solid;
+    border-radius: 100px 100px 100px 100px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin-left: 15%;
+    background-color: #FF1300;
+
+}
+.icone3 {
+    border: 25px solid;
+    border-radius: 100px 100px 100px 100px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin-left: 14%;
+    background-color: #FF1300;
+
+}
+.glyphicon-info-sign {
+    margin: 40% auto 0 auto;
+    color: #47c1c2;
+}
+.glyphicon-home {
+    margin: 40% auto 0 auto;
+    color: #47c1c2;
+}
+.glyphicon-music {
+    margin: 40% auto 0 auto;
+    color: #47c1c2;
+}
+.center_icons {
+    margin-top: 35%;
+    color: white;
+}
+.hover_color{
+    font-weight:bold;
+    font-size:60px;
+    color : #FF1300;
+    cursor:pointer;
+    transition: color 1s;
+    -moz-transition: color 1s; 
+    -webkit-transition: color 1s; 
+    -o-transition: color 1s; 
+}
+
+.hover_color:hover{
+    color : #FF9500;
+    transition: color 0.5s;
+    -moz-transition: color 0.5s; 
+    -webkit-transition: color 0.5s; 
+    -o-transition: color 0.5s; 
+}
+
+.bloc-text {
+    text-align: center;
+    margin-top: -130px;
+    font-size: 25px;
+}
+.text_icon {
+    text-align: center;
+    margin: 30px;
+}
+.inter_bloc {
+    background-image: url('../img/full3.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 800px;
+    padding: 0;
+}
+.inter_bloc2 {
+    background-image: url('../img/inter2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position :center center;
+    background-size: cover;
+    height: 800px;
+    padding: 0;
+}
+.inter_bloc3 {
+    background-image: url('../img/inter3.JPG');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 800px;
+    padding: 0;
+}
+
+
+
+/*test*/

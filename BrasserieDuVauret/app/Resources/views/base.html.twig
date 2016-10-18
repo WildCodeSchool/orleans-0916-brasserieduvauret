@@ -2,12 +2,117 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}
+                Brasserie du Vauret
+               {% endblock %}
+        </title>
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../CSS//jumbo.css">
+            <link rel="stylesheet" type="text/css" href="../CSS//3ronds.css">
+            <link rel="stylesheet" type="text/css" href="../CSS//formulaire.css">
+            <link rel="stylesheet" type="text/css" href="../CSS/content.css">
+            <link rel="stylesheet" type="text/css" href="../CSS/stylenavbar.css">
+            <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="../CSS/fonts.css">
+            <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+            <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        {% endblock %}
+
+        {% block javascripts %}
+            <script src="js/bootstrap.min.js"></script>
+        {% endblock %}
+
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
+
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
+
+        {% block body %}
+
+            {% block header %}
+
+                <script>
+                    $(document).ready(function () {
+                        $(".navbar-toggle").on("click", function () {
+                            $(this).toggleClass("active");
+                        });
+                    });
+                </script>
+
+                <div class="navbar navbar navbar-fixed" >
+
+                    <div class="navbar-header">
+
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                        </button>
+
+                        <a class="navbar-brand" href="#"> <img src="../img/logo.png" alt="Logo de la brasserie du vauret" class="img-responsive logo" />
+                        </a>
+
+                    </div>
+
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li role="presentation" class="active"><a class="onglet" href="#">Accueil</a></li>
+                            <li class="active"><a class="onglet" href="#">Bières</a></li>
+                            <li class="active"><a class="onglet" href="#">Brasserie</a></li>
+                            <li class="active"><a class="onglet" href="#">Points de vente</a></li>
+                            <li class="active"><a class="onglet" href="#">Actualités</a></li>
+                            <li class="active"><a class="onglet" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            {% endblock %}
+
+            {% block footer %}
+        <div class="container-fluid foot-back">
+            <div class="row">
+                <div class="col-lg-4 foot-bloc1">
+                    <h2 class="foot-contact">Plan du site</h2>
+                    <p class="foot-list foot-contact">
+                        <a href="#">Accueil</a><br/>
+                        <a href="#">Nos bières</a><br/>
+                        <a href="#">La Brasserie</a><br/>
+                        <a href="#">Nos points de vente</a><br/>
+                        <a href="#">Actualités</a><br/>
+                        <a href="#">Contact</a><br/>
+                        <a href="#">Mentions Légales</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 foot-bloc2">
+                    <h2 class="foot-contact">Contactez-nous</h2>
+                    <p class="foot-contact">par téléphone : 07 83 76 08 49<br>mail : cyril.bourassin@gmail.com<br>Facebook</p>
+                    <img class="foot-logofb" src="../img/facebook.png" alt="Logo Facebook">
+
+                </div>
+                <div class="col-lg-4 foot-bloc3">
+                    <div class="foot-contact">
+                        <h2>Newsletter</h2>
+                        <p>Recevez notre newsletter en vous abonnant ici :</p>
+                        <div class="input-group foot-input">
+                            <input type="text" class="form-control" placeholder="Newsletter">
+                            <span class="input-group-btn"><button class="btn btn-primary" type="button">Envoyer</button></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="container-fluid foot-back">
+            <div class="row">
+
+            </div>
+            {% endblock %}
+
+        {% endblock %}
+
     </body>
+
 </html>

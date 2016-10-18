@@ -1,1 +1,21 @@
-Hello World!
+{% extends 'BrasserieBundle::layout.html.twig' %}
+
+
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+
+    {% block content %}
+        {% include "BrasserieBundle:Default:jumbo.html.twig" %}
+        {% include "BrasserieBundle:Default:presentation.html.twig" %}
+        {% include "BrasserieBundle:Default:fil_actualite.html.twig" %}
+        {% include "BrasserieBundle:Default:map.html.twig" %}
+    {% endblock %}
+
+
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+
+{% endblock %}
