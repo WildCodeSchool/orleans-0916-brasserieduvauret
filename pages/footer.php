@@ -3,12 +3,13 @@
 		<div class="col-lg-4 foot-bloc1">
 			<h2 class="foot-contact">Plan du site</h2>
 			<p class="foot-list foot-contact">
-			Accueil<br>
-			Nos bières<br>
-			La Brasserie<br>
-			Nos points de vente<br>
-			Actualités<br>
-			Contact
+			<a href="#">Accueil</a><br/>
+			<a href="#">Nos bières</a><br/>
+			<a href="#">La Brasserie</a><br/>
+			<a href="#">Nos points de vente</a><br/>
+			<a href="#">Actualités</a><br/>
+			<a href="#">Contact</a><br/>
+			<a href="#">Mentions Légales</a>
 			</p>
 		</div>
 		<div class="col-lg-4 foot-bloc2">
@@ -34,10 +35,5 @@
 
 <div class="container-fluid foot-back">
 	<div class="row">
-		<div class="col-lg12">
-				<div class="foot-contact foot-bloc4">
-					<h3>Mentions légales</h3>
-					<p>lorem ipsum : Postremo ad id indignitatis est ventum, ut cum peregrini ob formidatam haut ita dudum alimentorum inopiam pellerentur ab urbe praecipites, sectatoribus disciplinarum liberalium inpendio paucis sine respiratione ulla extrusis, tenerentur minimarum adseclae veri, quique id simularunt ad tempus, et tria milia saltatricum ne interpellata quidem cum choris totidemque remanerent magistris.</p>
-				</div>
-			</div>
+
 </div>
