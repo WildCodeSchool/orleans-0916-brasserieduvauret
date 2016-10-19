@@ -1,0 +1,38 @@
+#    vauret_admin.example:
+#        class: VauretAdminBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
+
+services:
+    app.admin.produits:
+        class: VauretAdminBundle\Admin\ProduitsAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Administration du site", label: "Produits" }
+        arguments:
+            - ~
+            - VauretAdminBundle\Entity\Produits
+            - ~
+
+    app.admin.utilisateur:
+        class: VauretAdminBundle\Admin\UtilisateurAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Administration du site", label: "Utilisateur" }
+        arguments:
+            - ~
+            - VauretAdminBundle\Entity\Utilisateur
+            - ~
+    app.admin.actualites:
+        class: VauretAdminBundle\Admin\ActualityAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Administration du site", label: "Actualités" }
+        arguments:
+            - ~
+            - VauretAdminBundle\Entity\Actuality
+            - ~
+    app.admin.mail:
+        class: VauretAdminBundle\Admin\MailAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Administration du site", label: "Mail" }
+        arguments:
+            - ~
+            - VauretAdminBundle\Entity\email
+            - ~
