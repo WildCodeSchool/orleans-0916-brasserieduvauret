@@ -1,11 +1,7 @@
 /*Partie Jumbotron*/
 .jumbotron {
 
-
-    background-image: url('web/img/une.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
+    background: url('./image/une.jpg') no-repeat fixed center center;
     background-size: cover;
     height: 900px;
     width:100%;
@@ -104,7 +100,7 @@
     margin: 30px;
 }
 .inter_bloc {
-    background-image: url('../img/full3.jpg');
+    background-image: url('./image/full3.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -113,7 +109,7 @@
     padding: 0;
 }
 .inter_bloc2 {
-    background-image: url('../img/inter2.jpg');
+    background-image: url('./image/inter2.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position :center center;
@@ -122,10 +118,7 @@
     padding: 0;
 }
 .inter_bloc3 {
-    background-image: url('../img/inter3.JPG');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: url('./image/inter3.jpg') no-repeat fixed center center;
     background-size: cover;
     height: 800px;
     padding: 0;
