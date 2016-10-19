@@ -11,19 +11,19 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <link rel="stylesheet" type="text/css" href="../CSS//jumbo.css">
-            <link rel="stylesheet" type="text/css" href="../CSS//3ronds.css">
-            <link rel="stylesheet" type="text/css" href="../CSS//formulaire.css">
-            <link rel="stylesheet" type="text/css" href="../CSS/content.css">
+            <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/jumbo.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/3ronds.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/formulaire.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{'CSS/content.css'}}">
             <link rel="stylesheet" type="text/css" href="{{ asset('CSS/stylenavbar.css')}}">
             <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
-            <link rel="stylesheet" type="text/css" href="../CSS/fonts.css">
+            <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/fonts.css')}}">
             <link rel="stylesheet" type="text/css" href="{{ asset('CSS/footer.css')}}">
             <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
         {% endblock %}
 
         {% block javascripts %}
-            <script src="js/bootstrap.min.js"></script>
+            <script src="{{ asset ('js/bootstrap.min.js')}}"></script>
         {% endblock %}
 
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
@@ -51,7 +51,7 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
                         </button>
 
-                        <a class="navbar-brand" href="#"> <img src="{{ asset('img/logo.png')}}" alt="Logo de la brasserie du vauret" class="img-responsive logo" />
+                        <a class="navbar-brand" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php"> <img src="{{ asset('img/logo.png')}}" alt="Logo de la brasserie du vauret" class="img-responsive logo" />
                         </a>
 
                     </div>
@@ -87,7 +87,7 @@
                 <div class="col-lg-4 foot-bloc2">
                     <h2 class="foot-contact">Contactez-nous</h2>
                     <p class="foot-contact">par téléphone : 07 83 76 08 49<br>mail : cyril.bourassin@gmail.com<br>Facebook</p>
-                    <img class="foot-logofb" src="{{ asset('img/facebook.png')}}" " alt="Logo Facebook">
+                    <img class="foot-logofb" src="{{ asset('img/facebook.png')}}" alt="Logo Facebook">
 
                 </div>
                 <div class="col-lg-4 foot-bloc3">
@@ -102,8 +102,7 @@
                 </div>
             </div>
         </div>
-        </div>
-        </div>
+
 
         <div class="container-fluid foot-back">
             <div class="row">
@@ -112,7 +111,7 @@
             {% endblock %}
 
         {% endblock %}
-
+        </div>
     </body>
 
 </html>
