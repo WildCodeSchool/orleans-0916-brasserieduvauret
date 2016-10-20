@@ -23,8 +23,7 @@ class Actuality
      * @var string
      */
     private $contenu;
-
-
+    
     /**
      * Get id
      *

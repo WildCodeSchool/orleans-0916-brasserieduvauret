@@ -1,6 +1,6 @@
 VauretAdminBundle\Entity\Utilisateur:
     type: entity
-    table: null
+    table: utilisateur
     repositoryClass: VauretAdminBundle\Repository\UtilisateurRepository
     id:
         id:
@@ -25,3 +25,4 @@ VauretAdminBundle\Entity\Utilisateur:
             type: string
             length: 255
     lifecycleCallbacks: {  }
+
