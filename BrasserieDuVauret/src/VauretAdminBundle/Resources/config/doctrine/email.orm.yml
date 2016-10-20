@@ -1,0 +1,15 @@
+VauretAdminBundle\Entity\email:
+    type: entity
+    table: null
+    repositoryClass: VauretAdminBundle\Repository\emailRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        mail:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
