@@ -8,6 +8,7 @@ use Sonata\AdminBundle\Show\ShowMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 
 class ProduitsAdmin extends Admin
 {
@@ -18,7 +19,7 @@ class ProduitsAdmin extends Admin
             ->add('nom')
             ->add('slug')
             ->add('contenu')
-            ->add('image')
+            ->add('image', FileType::class)
             ->add('une')
             ->add('prod')
         ;
