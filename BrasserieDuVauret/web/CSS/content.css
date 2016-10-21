@@ -1,0 +1,44 @@
+
+h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.test {
+    min-width: 300px;
+}
+.image_une {
+    margin-bottom: 10px;
+    height: 600px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background: #CCC
+}
+.h_iframe {
+    position: relative;
+}
+.h_iframe .ratio {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.h_iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.barre {
+    border-right: 3px solid grey;
+    height: 500px;
+}

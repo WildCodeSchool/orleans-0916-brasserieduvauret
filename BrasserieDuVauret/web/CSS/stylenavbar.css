@@ -1,0 +1,58 @@
+.nav {
+    margin-top: 40px;
+}
+
+.navbar-brand {
+
+  margin-top: 15px;
+
+  margin-bottom: 50px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(1) {
+	  top: 1px;
+    background-color:  black;
+
+}
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+	  top: 1px;
+    background-color:  black;
+}
+
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+  	top: 2px;
+    background-color:  black;
+
+}
+
+.navbar-toggle .icon-bar {
+	  position: relative;
+	  transition: all 500ms ease-in-out;
+    
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+	  top: 6px;
+	  transform: rotate(45deg);
+        background-color:  black;
+    
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+	  background-color: transparent;
+
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	  top: -6px;
+	  transform: rotate(-45deg);
+}
+
+.onglet {
+    font-family:'Spicy Rice', cursive;
+    color:black;
+    font-size: 25px;
+}
+

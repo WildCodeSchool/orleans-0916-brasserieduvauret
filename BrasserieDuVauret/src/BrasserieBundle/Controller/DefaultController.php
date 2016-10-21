@@ -14,4 +14,48 @@ class DefaultController extends Controller
     {
         return $this->render('BrasserieBundle:Default:index.html.twig');
     }
+
+    /**
+     * @Route("brasserie")
+     */
+    public function brasserieAction()
+    {
+        return $this->render('BrasserieBundle:Default:brasserie.html.twig');
+    }
+
+    /**
+     * @Route("actualites")
+     */
+    public function actualitesAction()
+    {
+        return $this->render('BrasserieBundle:Default:actualites.html.twig');
+    }
+
+    /**
+     * @Route("bieres")
+     */
+    public function bieresAction()
+    {
+        return $this->render('BrasserieBundle:Default:bieres.html.twig');
+    }
+
+    /**
+     * @Route("pointsdevente")
+     */
+    public function pointsdeventeAction()
+    {
+        return $this->render('BrasserieBundle:Default:pointsdevente.html.twig');
+    }
+
+    /**
+     * @Route("brasserie2")
+     */
+    public function brasserie2Action()
+    {
+        return $this->render('BrasserieBundle:Default:brasserie2.html.twig');
+    }
+
+
+
+
 }
