@@ -1,6 +1,6 @@
 vauret_admin:
     resource: "@VauretAdminBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /adm
 
 brasserie:
     resource: "@BrasserieBundle/Controller/"
