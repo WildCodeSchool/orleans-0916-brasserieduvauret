@@ -24,10 +24,11 @@ class Actuality
      */
     private $contenu;
 
+
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
