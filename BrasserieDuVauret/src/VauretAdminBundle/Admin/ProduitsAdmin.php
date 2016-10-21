@@ -8,10 +8,8 @@ use Sonata\AdminBundle\Show\ShowMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
-<<<<<<< HEAD
-=======
 use Symfony\Component\Form\Extension\Core\Type\FileType;
->>>>>>> template_twig
+
 
 class ProduitsAdmin extends Admin
 {
@@ -22,11 +20,8 @@ class ProduitsAdmin extends Admin
             ->add('nom')
             ->add('slug')
             ->add('contenu')
-<<<<<<< HEAD
             ->add('image')
-=======
             ->add('image', FileType::class)
->>>>>>> template_twig
             ->add('une')
             ->add('prod')
         ;

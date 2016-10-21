@@ -23,12 +23,7 @@ class Actuality
      * @var string
      */
     private $contenu;
-<<<<<<< HEAD
 
-
-=======
-    
->>>>>>> template_twig
     /**
      * Get id
      *

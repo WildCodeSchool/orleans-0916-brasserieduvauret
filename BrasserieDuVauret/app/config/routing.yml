@@ -19,8 +19,7 @@ _sonata_admin:
     type: sonata_admin
     prefix: /admin
 
-<<<<<<< HEAD
-=======
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
->>>>>>> template_twig
+
+

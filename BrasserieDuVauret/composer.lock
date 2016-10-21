@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
+
     "hash": "eb2b0c448ce75ab7b9d55fbdcd94e94c",
     "content-hash": "642d08f0e340fb939b4fd6ff2be423a2",
 
@@ -1845,7 +1845,10 @@
             "time": "2016-10-04 12:09:21"
         },
         {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 82209d4087a00a0b069e3bda0d44b9a5f0466fa9
             "name": "sonata-project/easy-extends-bundle",
             "version": "2.1.10",
             "source": {
@@ -1905,7 +1908,6 @@
             "time": "2015-12-02 22:24:42"
         },
         {
->>>>>>> template_twig
             "name": "sonata-project/exporter",
             "version": "1.7.0",
             "source": {
