@@ -1,1 +1,32 @@
-Hello World!
+{% extends 'BrasserieBundle::layout.html.twig' %}
+
+
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+
+    {% block content %}
+
+
+        {% include "BrasserieBundle:Default:jumbo.html.twig" %}
+        {% include "BrasserieBundle:Default:presentation.html.twig" %}
+        {% include "BrasserieBundle:Default:fil_actualite.html.twig" %}
+
+        <div class="container-fluid row inter_bloc2">
+
+            <h1 class="slogan2">"Les bières sont non filtrées,</br>non pasteurisées et refermentées en bouteille"</h1>
+        </div>
+
+        {% include "BrasserieBundle:Default:map.html.twig" %}
+        <div class="container-fluid row inter_bloc3">
+            <h1 class="slogan2">"Nous produisons des bières bio en flux détendu"</h1>
+
+        </div>
+    {% endblock %}
+
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+
+{% endblock %}
