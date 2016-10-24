@@ -17,6 +17,7 @@ class ActualityAdmin extends Admin
         $formMapper
             ->add('titre')
             ->add('contenu')
+            ->add('imageactu')
         ;
     }
 
@@ -26,6 +27,7 @@ class ActualityAdmin extends Admin
         $datagridMapper
             ->add('titre')
             ->add('contenu')
+            ->add('imageactu')
         ;
     }
 
@@ -35,6 +37,7 @@ class ActualityAdmin extends Admin
         $listMapper
             ->addIdentifier('titre')
             ->add('contenu')
+            ->add('imageactu')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'view' => array(),
@@ -52,6 +55,7 @@ class ActualityAdmin extends Admin
             ->add('id')
             ->add('titre')
             ->add('contenu')
+            ->add('imageactu')
         ;
     }
 }

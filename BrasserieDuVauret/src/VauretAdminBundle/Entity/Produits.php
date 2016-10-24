@@ -140,7 +140,7 @@ class Produits
     /**
      * Get image
      *
-     * @return string 
+     * @return string
      */
     public function getImage()
     {

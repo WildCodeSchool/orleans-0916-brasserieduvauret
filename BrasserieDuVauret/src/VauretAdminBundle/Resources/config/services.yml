@@ -12,14 +12,6 @@ services:
             - VauretAdminBundle\Entity\Produits
             - ~
 
-    app.admin.utilisateur:
-        class: VauretAdminBundle\Admin\UtilisateurAdmin
-        tags:
-            - { name: sonata.admin, manager_type: orm, group: "Administration du site", label: "Utilisateur" }
-        arguments:
-            - ~
-            - VauretAdminBundle\Entity\Utilisateur
-            - ~
     app.admin.actualites:
         class: VauretAdminBundle\Admin\ActualityAdmin
         tags:

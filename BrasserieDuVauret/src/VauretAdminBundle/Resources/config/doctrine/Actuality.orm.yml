@@ -14,4 +14,7 @@ VauretAdminBundle\Entity\Actuality:
             length: '150'
         contenu:
             type: text
+        imageactu:
+          type: string
+          lenght: '255'
     lifecycleCallbacks: {  }

@@ -24,6 +24,10 @@ class Actuality
      */
     private $contenu;
 
+    /**
+     * @var string
+     */
+    private $imageactu;
 
     /**
      * Get id
@@ -79,5 +83,23 @@ class Actuality
     public function getContenu()
     {
         return $this->contenu;
+    }
+
+    /**
+     * @param string $imageactu
+     * @return Actuality
+     */
+    public function setImageactu(string $imageactu)
+    {
+        $this->imageactu = $imageactu;
+    }
+
+    /**
+     * Get imageactu
+     * @return string
+     */
+    public function getImageactu(): string
+    {
+        return $this->imageactu;
     }
 }
