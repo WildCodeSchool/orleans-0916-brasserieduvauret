@@ -1,0 +1,27 @@
+.foot-contact {
+	text-align: center;
+}
+.foot-back {
+	background-color: rgb(255, 222, 115);
+}
+.foot-logofb {
+	height: 50px;
+	width: 50px;
+	margin-left: 50%;
+}
+.foot-input {
+	margin: 40px auto auto 20%;
+}
+.foot-list {
+	list-style-type: none;
+	margin-top: 3px;
+
+}
+li {
+	color: white;
+}
+
+
+h3 {
+	text-align: center;
+}

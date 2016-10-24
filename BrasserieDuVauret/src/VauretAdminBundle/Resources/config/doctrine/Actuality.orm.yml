@@ -1,0 +1,20 @@
+VauretAdminBundle\Entity\Actuality:
+    type: entity
+    table: null
+    repositoryClass: VauretAdminBundle\Repository\ActualityRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titre:
+            type: string
+            length: '150'
+        contenu:
+            type: text
+        imageactu:
+          type: string
+          lenght: '255'
+    lifecycleCallbacks: {  }

@@ -16,7 +16,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("brasserie")
+     * @Route("/brasserie")
      */
     public function brasserieAction()
     {
@@ -24,7 +24,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("actualites")
+     * @Route("/actualites")
      */
     public function actualitesAction()
     {
@@ -32,7 +32,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("bieres")
+     * @Route("/bieres")
      */
     public function bieresAction()
     {
@@ -49,7 +49,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("pointsdevente")
+     * @Route("/pointsdevente")
      */
     public function pointsdeventeAction()
     {
@@ -57,7 +57,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("brasserie2")
+     * @Route("/brasserie2")
      */
     public function brasserie2Action()
     {
