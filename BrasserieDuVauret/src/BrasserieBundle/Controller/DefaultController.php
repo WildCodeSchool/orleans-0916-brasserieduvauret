@@ -36,7 +36,16 @@ class DefaultController extends Controller
      */
     public function bieresAction()
     {
-        return $this->render('BrasserieBundle:Default:bieres.html.twig');
+
+        $repository = $this->getDoctrine()
+        ->getManager()
+        ->getRepository('AdminBundle:Produits');
+
+
+        $listProduits = $repository->findAll();
+
+
+        return $this->render('BrasserieBundle:Default:bieres.html.twig' , array('bieres'=>$listProduits));
     }
 
     /**
