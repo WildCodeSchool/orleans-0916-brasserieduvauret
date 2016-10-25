@@ -20,7 +20,6 @@ class ProduitsAdmin extends Admin
             ->add('nom')
             ->add('slug')
             ->add('contenu')
-            ->add('image')
             ->add('image', FileType::class)
             ->add('une')
             ->add('prod')

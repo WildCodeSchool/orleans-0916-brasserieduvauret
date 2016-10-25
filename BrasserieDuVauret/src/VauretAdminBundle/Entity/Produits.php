@@ -192,4 +192,6 @@ class Produits
     {
         return $this->prod;
     }
+
+
 }
