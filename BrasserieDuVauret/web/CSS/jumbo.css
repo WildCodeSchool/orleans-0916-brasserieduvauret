@@ -1,7 +1,7 @@
 /*Partie Jumbotron*/
 .jumbotron {
 
-    background: url('./image/une.jpg') no-repeat fixed center center;
+    background: url('./image/image_accueil.JPG') no-repeat fixed center center;
     background-size: cover;
     height: 900px;
     width:100%;

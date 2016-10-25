@@ -10,6 +10,16 @@
 
 }
 
+@font-face {
+    font-family: 'Roman-Antique';
+    src: url('../fonts/Roman-Antique.ttf.woff') format('woff'),
+    url('../fonts/Roman-Antique.ttf.svg#Roman-Antique') format('svg'),
+    url('../fonts/Roman-Antique.ttf.eot'),
+    url('../fonts/Roman-Antique.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 .text_icon {
@@ -19,7 +29,7 @@
 }
 
 .slogan2 {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Roman-Antique', cursive;
     color: white;
-    font-size: 100px;
+    font-size: 80px;
 }

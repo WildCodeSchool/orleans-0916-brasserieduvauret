@@ -1,7 +1,15 @@
-h2 {
+.titre_map {
+    font-family: 'Roman-Antique';
     text-align:center;
-    padding-bottom: 30px;
+    padd-top : 20px;
+
 }
-.map_h {
-	height: 800px;
+.map_col {
+    margin-bottom:-10px;
+
+}
+
+.map_accueil {
+
+    margin : -15px;
 }
