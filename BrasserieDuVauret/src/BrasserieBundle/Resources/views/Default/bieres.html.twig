@@ -2,7 +2,8 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('web/css/bieres.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('css/bieres.css') }}" type="text/css" />
+
 {% endblock %}
 
 
@@ -14,79 +15,23 @@
     {% block content %}
 
 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 col-xs-12 brass">
-                        <h1>La bière du mois</h1>
-                        <img src="{{ asset('images/avlambre.jpg') }}" alt="" />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
 
-                    <div class="col-lg-6 col-xs-12 brass">
-                        <h1>Pourquoi est-ce celle du mois</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
+        <!-- Liste des bières -->
+        <div class="row">
+            {% for biere in bieres %}
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#" class="thumbnail">
+                        <img src="{{ asset('images/' ~ biere.image) }}" alt="" />
+                        <h2> {{ biere.nom }} </h2>
+                        <p> {{ biere.contenu }} </p>
+                    </a>
                 </div>
-            </div>
 
+            {% endfor %}
 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 brass">
-                        <img src="{{ asset('images/avlblonde.jpg') }}" alt="" />
+        </div>
 
-                    <h2>L'Avallée de la Loire Blonde</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 brass">
-                        <img src="{{ asset('images/avlambre.jpg') }}" alt="" />
-                        <h2>L'Avallée de la Loire Ambrée</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 brass">
-                        <img src="{{ asset('images/avlblanche.jpg') }}" alt="" />
-                        <h2>L'Avallée de la Loire Blanche</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 brass">
-                        <img src="{{ asset('images/darkside.jpg') }}" alt="" />
-                        <h2>The Dark Side of THE Mouss</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 brass">
-                        <img src="{{ asset('images/hippieale.jpg') }}" alt="" />
-                        <h2>Hip Pie Ale</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-
-                </div>
-            </div>
-
-
-
-
-        {% block footer%}
-            {{ parent() }}
-        {% endblock %}
-
-
-
-        {% endblock %}
-
-
-
-
-
-
-
+    {% endblock %}
 
 
 {% endblock %}
