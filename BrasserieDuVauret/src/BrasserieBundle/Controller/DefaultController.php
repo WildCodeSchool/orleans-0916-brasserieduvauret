@@ -48,11 +48,11 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/brasserie2")
+     * @Route("/contact")
      */
-    public function brasserie2Action()
+    public function contactAction()
     {
-        return $this->render('BrasserieBundle:Default:brasserie2.html.twig');
+        return $this->render('BrasserieBundle:Default:contact.html.twig');
     }
 
 

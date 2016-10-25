@@ -1,27 +1,66 @@
 .foot-contact {
 	text-align: center;
+	color : white;
+	font-family: 'Roman-Antique';
 }
+
+.foot-menu {
+	text-align: center;
+	color : white;
+	font-family: 'Roman-Antique';
+	padding-left:30px;
+
+}
+
+.foot_list {
+	list-style-type: none;
+	margin-top: 3px;
+	color :white;
+	font-size: 20px;
+	font-family: 'Roman-Antique';
+	text-align: center;
+}
+
+.liste_menu {
+	color : white;
+	text-align: center;
+
+}
+
 .foot-back {
-	background-color: rgb(255, 222, 115);
+	background-color: black;
 }
 .foot-logofb {
 	height: 50px;
 	width: 50px;
-	margin-left: 50%;
+
 }
 .foot-input {
 	margin: 40px auto auto 20%;
 }
-.foot-list {
+
+.liste-mention {
 	list-style-type: none;
 	margin-top: 3px;
+	color :white;
+	font-size: 10px;
 
 }
+
 li {
 	color: white;
 }
 
 
-h3 {
+.foot-logowild {
+	height: 10%;
+	width: 10%;
+}
+
+.foot-news-text {
+	margin-top: 3px;
+	color :white;
+	font-size: 20px;
+	font-family: 'Roman-Antique';
 	text-align: center;
 }
