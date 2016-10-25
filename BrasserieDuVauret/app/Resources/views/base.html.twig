@@ -12,6 +12,7 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/jumbo.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/map.css')}}">
             <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/3ronds.css')}}">
             <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/formulaire.css')}}">
             <link rel="stylesheet" type="text/css" href="{{'CSS/content.css'}}">
@@ -26,7 +27,9 @@
             <script src="{{ asset ('js/bootstrap.min.js')}}"></script>
         {% endblock %}
 
-        <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}" />
+
+        <link rel="icon" type="image/png" sizes="16x16" href="{{'img/favicon-16x16.png'}}">
+
     </head>
 
     <body>
@@ -58,45 +61,81 @@
 
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li role="presentation" class="active"><a class="onglet" href="#">Accueil</a></li>
-                            <li class="active"><a class="onglet" href="#">Bières</a></li>
-                            <li class="active"><a class="onglet" href="#">Brasserie</a></li>
-                            <li class="active"><a class="onglet" href="#">Points de vente</a></li>
-                            <li class="active"><a class="onglet" href="#">Actualités</a></li>
-                            <li class="active"><a class="onglet" href="#">Contact</a></li>
+                            <li role="presentation" class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php">Accueil</a></li>
+                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/bieres">Bières</a></li>
+                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/brasserie">Brasserie</a></li>
+                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/pointsdevente">Points de vente</a></li>
+                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/actualites">Actualités</a></li>
+                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             {% endblock %}
 
+
             {% block footer %}
         <div class="container-fluid foot-back">
             <div class="row">
-                <div class="col-lg-4 foot-bloc1">
-                    <h2 class="foot-contact">Plan du site</h2>
-                    <p class="foot-list foot-contact">
-                        <a href="#">Accueil</a><br/>
-                        <a href="#">Nos bières</a><br/>
-                        <a href="#">La Brasserie</a><br/>
-                        <a href="#">Nos points de vente</a><br/>
-                        <a href="#">Actualités</a><br/>
-                        <a href="#">Contact</a><br/>
-                        <a href="#">Mentions Légales</a>
-                    </p>
-                </div>
-                <div class="col-lg-4 foot-bloc2">
-                    <h2 class="foot-contact">Contactez-nous</h2>
-                    <p class="foot-contact">par téléphone : 07 83 76 08 49<br>mail : cyril.bourassin@gmail.com<br>Facebook</p>
-                    <img class="foot-logofb" src="{{ asset('img/facebook.png')}}" alt="Logo Facebook">
+                <div class="col-lg-3 foot-bloc1">
+                    <h2 class="foot-menu">Plan du site</h2>
+
+                    <ul>
+                        <li class="foot_list">
+                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/">Accueil</a>
+                        </li>
+                        <li class="foot_list">
+                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/bieres">Nos bières</a>
+                        </li>
+                        <li class="foot_list">
+                        <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/brasserie">La Brasserie</a>
+                        </li>
+                        <li class="foot_list">
+                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/pointsdevente">Nos points de vente</a>
+                        </li>
+                        <li class="foot_list">
+                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/bieres">actualites</a>
+                        </li>
+                        <li class="foot_list">
+                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/contact">Contact</a><br/>
+                        </li>
+
+                    </ul>
 
                 </div>
-                <div class="col-lg-4 foot-bloc3">
+
+                <div class="col-lg-offset-1 col-lg-3 foot-bloc2">
+                    <h2 class="foot-menu">Contact</h2>
+
+                    <ul>
+                        <li class="foot_list">
+                            501 avenue du Vauret</br> 45430 Mardié
+                        </li>
+                        <li class="foot_list">
+                            07 83 76 08 49
+                        </li>
+                        <li class="foot_list">
+                           Cyril.bourassin[@]gmail.com
+                        </li>
+                        <li class="foot_list">
+                            <a href="https://www.facebook.com/brasserieduvauret" target="_blank"><img class="foot-logofb" src="{{ asset('img/facebook.png')}}" alt="Logo Facebook" ></a></li>
+                        </li>
+                        <li class="foot_list">
+                            <a class="liste-mention" href="#">Mentions Légales - </a>
+                            <a href="http://www.wildcodeschool.fr/" target="_blank"><img class="foot-logowild" src="{{ asset('img/wildcodeschool.png')}}" alt="Logo wild code school" ></a></li>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-offset-2 col-lg-3 col-md-offset-4 col-md-4 col-sm-12 col-xs-12 foot-bloc3">
                     <div class="foot-contact">
                         <h2>Newsletter</h2>
-                        <p>Recevez notre newsletter en vous abonnant ici :</p>
+                        <p class="foot-news-text">Recevez notre newsletter</br>en vous abonnant ici :</p>
                         <div class="input-group foot-input">
                             <input type="text" class="form-control" placeholder="Newsletter">
-                            <span class="input-group-btn"><button class="btn btn-primary" type="button">Envoyer</button></span>
+                            <span class="input-group-btn" ><button class="btn btn-warning" type="button" >Envoyer</button></span>
                         </div>
                     </div>
                 </div>

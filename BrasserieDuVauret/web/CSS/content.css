@@ -1,7 +1,8 @@
 
-h2 {
+.titre_actu{
     text-align: center;
     padding-bottom: 30px;
+    font-family: 'Roman-Antique';
 }
 .test {
     min-width: 300px;
