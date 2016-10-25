@@ -38,12 +38,10 @@ class DefaultController extends Controller
     {
 
         $repository = $this->getDoctrine()
-        ->getManager()
-        ->getRepository('AdminBundle:Produits');
-
+                            ->getManager()
+                            ->getRepository('VauretAdminBundle:Produits');
 
         $listProduits = $repository->findAll();
-
 
         return $this->render('BrasserieBundle:Default:bieres.html.twig' , array('bieres'=>$listProduits));
     }

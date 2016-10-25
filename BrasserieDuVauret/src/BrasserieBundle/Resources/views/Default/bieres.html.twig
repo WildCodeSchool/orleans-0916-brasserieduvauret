@@ -10,7 +10,7 @@
 
     {% block content %}
 
-        <!-- Liste des bières rangée 1-->
+        <!-- Liste des bières -->
         <div class="row">
             {% for biere in bieres %}
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -20,9 +20,10 @@
                         <p> {{ biere.contenu }} </p>
                     </a>
                 </div>
+
             {% endfor %}
 
-
+        </div>
 
     {% endblock %}
 
