@@ -1,8 +1,8 @@
 {% extends 'BrasserieBundle::layout.html.twig' %}
 
-{% block stylesheets %}
+{% block head %}
     {{ parent() }}
-<link rel="stylesheet" href="{{ asset('css/bieres.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/bieres.css') }}" type="text/css" />
 
 {% endblock %}
 
@@ -33,5 +33,9 @@
 
     {% endblock %}
 
+
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
 
 {% endblock %}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head>{% block head %}
+
         <meta charset="UTF-8" />
         <title>{% block title %}
                 Brasserie du Vauret
@@ -27,10 +28,10 @@
             <script src="{{ asset ('js/bootstrap.min.js')}}"></script>
         {% endblock %}
 
-
         <link rel="icon" type="image/png" sizes="16x16" href="{{'img/favicon-16x16.png'}}">
 
-    </head>
+
+    </head>{% endblock %}
 
     <body>
 
