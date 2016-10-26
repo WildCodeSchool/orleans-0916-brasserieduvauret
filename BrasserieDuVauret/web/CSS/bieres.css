@@ -43,3 +43,12 @@
     white-space:normal;
 
 }
+.bierebloc {
+    background-image: url('./image/houblon.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 800px;
+    padding: 0;
+}
