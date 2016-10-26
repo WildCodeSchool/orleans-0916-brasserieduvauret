@@ -21,7 +21,7 @@
             {% for biere in bieres %}
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <a href="#" class="thumbnail">
-                        <img src="{{ asset('images/' ~ biere.image) }}" alt="" />
+                        <img src="{{ asset('upload/' ~ biere.filename) }}" alt="" />
                         <h2> {{ biere.nom }} </h2>
                         <p> {{ biere.contenu }} </p>
                     </a>
