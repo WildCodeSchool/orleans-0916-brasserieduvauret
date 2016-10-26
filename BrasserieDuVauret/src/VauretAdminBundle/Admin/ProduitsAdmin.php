@@ -23,8 +23,7 @@ class ProduitsAdmin extends Admin
             ->add('contenu')
             ->add('image', FileType::class)
             ->add('une')
-            ->add('prod')
-        ;
+            ->add('prod');
     }
 
     // Fields to be shown on filter forms
@@ -36,8 +35,7 @@ class ProduitsAdmin extends Admin
             ->add('contenu')
             ->add('image')
             ->add('une')
-            ->add('prod')
-        ;
+            ->add('prod');
     }
 
     // Fields to be shown on lists
@@ -56,8 +54,7 @@ class ProduitsAdmin extends Admin
                     'edit' => array(),
                     'delete' => array(),
                 )
-            ))
-        ;
+            ));
     }
 
     // Fields to be shown on show action
@@ -70,7 +67,7 @@ class ProduitsAdmin extends Admin
             ->add('contenu')
             ->add('image')
             ->add('une')
-            ->add('prod')
-        ;
+            ->add('prod');
     }
-}
+
+   }

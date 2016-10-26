@@ -16,7 +16,7 @@ VauretAdminBundle\Entity\Produits:
             type: text
         contenu:
             type: text
-        image:
+        file:
             type: string
             length: 255
         une:

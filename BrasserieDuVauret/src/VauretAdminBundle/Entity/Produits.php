@@ -125,20 +125,20 @@ class Produits
     }
 
     /**
-     * Set image
+     * Set file
      *
      * @param string $image
      * @return Produits
      */
-    public function setImage($image)
+    public function setFile($file)
     {
-        $this->image = $image;
+        $this->image = $file;
 
         return $this;
     }
 
     /**
-     * Get image
+     * Get file
      *
      * @return string
      */
