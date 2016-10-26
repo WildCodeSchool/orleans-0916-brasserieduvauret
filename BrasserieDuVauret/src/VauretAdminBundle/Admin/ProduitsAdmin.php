@@ -3,6 +3,7 @@
 
 namespace VauretAdminBundle\Admin;
 
+use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Show\ShowMapper;
 use Sonata\AdminBundle\Form\FormMapper;
@@ -12,7 +13,9 @@ use Symfony\Component\Form\Extension\Core\Type\FileType;
 
 
 
-class ProduitsAdmin extends Admin
+
+
+class ProduitsAdmin extends AbstractAdmin
 {
     // Fields to be shown on create/edit forms
     protected function configureFormFields(FormMapper $formMapper)
@@ -21,10 +24,28 @@ class ProduitsAdmin extends Admin
             ->add('nom')
             ->add('slug')
             ->add('contenu')
-            ->add('image', FileType::class)
+            ->add('file', 'file', array(
+                'required' => false))
             ->add('une')
             ->add('prod')
         ;
+    }
+
+    public function prePersist($image)
+    {
+        $this->manageFileUpload($image);
+    }
+
+    public function preUpdate($image)
+    {
+        $this->manageFileUpload($image);
+    }
+
+    private function manageFileUpload($image)
+    {
+        if ($image->getFile()) {
+            $image->refreshUpdated();
+        }
     }
 
     // Fields to be shown on filter forms
@@ -34,7 +55,7 @@ class ProduitsAdmin extends Admin
             ->add('nom')
             ->add('slug')
             ->add('contenu')
-            ->add('image')
+            ->add('filename')
             ->add('une')
             ->add('prod')
         ;
@@ -47,7 +68,7 @@ class ProduitsAdmin extends Admin
             ->addIdentifier('nom')
             ->add('slug')
             ->add('contenu')
-            ->add('image')
+            ->add('filename')
             ->add('une')
             ->add('prod')
             ->add('_action', 'actions', array(
@@ -68,9 +89,11 @@ class ProduitsAdmin extends Admin
             ->add('nom')
             ->add('slug')
             ->add('contenu')
-            ->add('image')
+            ->add('filename')
             ->add('une')
             ->add('prod')
         ;
     }
+
+
 }

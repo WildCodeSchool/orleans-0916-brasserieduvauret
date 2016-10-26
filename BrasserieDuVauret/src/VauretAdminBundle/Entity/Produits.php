@@ -3,12 +3,17 @@
 namespace VauretAdminBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+
 
 /**
  * Produits
  */
 class Produits
 {
+    const SERVER_PATH_TO_IMAGE_FOLDER = 'upload';
+
     /**
      * @var int
      */
@@ -30,9 +35,9 @@ class Produits
     private $contenu;
 
     /**
-     * @var string
+     * Unmapped property to handle file uploads
      */
-    private $image;
+    private $file;
 
     /**
      * @var string
@@ -44,7 +49,25 @@ class Produits
      */
     private $prod;
 
+    private $updated;
 
+    private $filename;
+
+    /**
+     * @return mixed
+     */
+    public function getFilename()
+    {
+        return $this->filename;
+    }
+
+    /**
+     * @param mixed $filename
+     */
+    public function setFilename($filename)
+    {
+        $this->filename = $filename;
+    }
     /**
      * Get id
      *
@@ -125,26 +148,66 @@ class Produits
     }
 
     /**
-     * Set image
+     * Sets file.
      *
-     * @param string $image
-     * @return Produits
+     * @param UploadedFile $file
      */
-    public function setImage($image)
+    public function setFile(UploadedFile $file = null)
     {
-        $this->image = $image;
-
-        return $this;
+        $this->file = $file;
     }
 
     /**
-     * Get image
+     * Get file.
      *
-     * @return string
+     * @return UploadedFile
      */
-    public function getImage()
+    public function getFile()
     {
-        return $this->image;
+        return $this->file;
+    }
+
+    /**
+     * Manages the copying of the file to the relevant place on the server
+     */
+    public function upload()
+    {
+        // the file property can be empty if the field is not required
+        if (null === $this->getFile()) {
+            return;
+        }
+
+        // we use the original file name here but you should
+        // sanitize it at least to avoid any security issues
+
+        // move takes the target directory and target filename as params
+        $this->getFile()->move(
+            self::SERVER_PATH_TO_IMAGE_FOLDER,
+            $this->getFile()->getClientOriginalName()
+        );
+
+        // set the path property to the filename where you've saved the file
+        $this->setFilename ($this->getFile()->getClientOriginalName());
+
+        // clean up the file property as you won't need it anymore
+        $this->setFile(null);
+    }
+
+
+    /**
+     * Lifecycle callback to upload the file to the server
+     */
+    public function lifecycleFileUpload()
+    {
+        $this->upload();
+    }
+
+    /**
+     * Updates the hash value to force the preUpdate and postUpdate events to fire
+     */
+    public function refreshUpdated()
+    {
+        $this->setUpdated(new \DateTime("now"));
     }
 
     /**
@@ -191,5 +254,21 @@ class Produits
     public function getProd()
     {
         return $this->prod;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUpdated()
+    {
+        return $this->updated;
+    }
+
+    /**
+     * @param mixed $updated
+     */
+    public function setUpdated($updated)
+    {
+        $this->updated = $updated;
     }
 }

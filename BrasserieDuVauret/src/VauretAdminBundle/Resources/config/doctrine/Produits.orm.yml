@@ -1,13 +1,12 @@
 VauretAdminBundle\Entity\Produits:
     type: entity
-    table: null
+    table: produits
     repositoryClass: VauretAdminBundle\Repository\ProduitsRepository
     id:
         id:
             type: integer
             id: true
-            generator:
-                strategy: AUTO
+            generator: { strategy: AUTO }
     fields:
         nom:
             type: string
@@ -16,13 +15,19 @@ VauretAdminBundle\Entity\Produits:
             type: text
         contenu:
             type: text
-        image:
+        filename:
             type: string
-            length: 255
+            length: 100
         une:
             type: string
             length: '3'
         prod:
             type: string
             length: '3'
-    lifecycleCallbacks: {  }
+        updated:
+            type:         datetime
+            nullable:     true
+
+    lifecycleCallbacks:
+        prePersist:   [ lifecycleFileUpload ]
+        preUpdate:    [ lifecycleFileUpload ]
