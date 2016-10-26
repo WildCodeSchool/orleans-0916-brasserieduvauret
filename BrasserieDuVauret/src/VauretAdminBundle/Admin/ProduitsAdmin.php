@@ -27,8 +27,7 @@ class ProduitsAdmin extends AbstractAdmin
             ->add('file', 'file', array(
                 'required' => false))
             ->add('une')
-            ->add('prod')
-        ;
+            ->add('prod');
     }
 
     public function prePersist($image)
@@ -57,8 +56,7 @@ class ProduitsAdmin extends AbstractAdmin
             ->add('contenu')
             ->add('filename')
             ->add('une')
-            ->add('prod')
-        ;
+            ->add('prod');
     }
 
     // Fields to be shown on lists
@@ -77,8 +75,7 @@ class ProduitsAdmin extends AbstractAdmin
                     'edit' => array(),
                     'delete' => array(),
                 )
-            ))
-        ;
+            ));
     }
 
     // Fields to be shown on show action
@@ -91,9 +88,9 @@ class ProduitsAdmin extends AbstractAdmin
             ->add('contenu')
             ->add('filename')
             ->add('une')
-            ->add('prod')
-        ;
+            ->add('prod');
     }
 
 
-}
+   }
+

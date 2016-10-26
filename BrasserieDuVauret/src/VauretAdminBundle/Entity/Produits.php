@@ -152,9 +152,13 @@ class Produits
      *
      * @param UploadedFile $file
      */
-    public function setFile(UploadedFile $file = null)
+
+
+    public function setFile($file)
     {
-        $this->file = $file;
+        $this->image = $file;
+
+        return $this;
     }
 
     /**
@@ -162,6 +166,7 @@ class Produits
      *
      * @return UploadedFile
      */
+
     public function getFile()
     {
         return $this->file;
