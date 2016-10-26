@@ -4,7 +4,18 @@
 
 }
 
+.h1bieres {
+    color: white;
+    background-color: darkorange;
+    font-size: 2em;
+    text-align: center;
 
+}
+
+.photo {
+    border-radius: 4%;
+    width: 350px;
+}
 
 
 .view img {
@@ -19,27 +30,10 @@
 }
 
 
-.h1bieres {
-    color: white;
-    background-color: darkorange;
 
-}
 
 .bieresdumois {
      background-color: #00a7d0;
     height: 100%;
 
  }
- /*   margin-bottom: 30px; */
-
-
-.flottant {
-    float:left;
-}
-
-.pleft {
-    margin-left: 35em;
-    margin-bottom: 30em;
-    white-space:normal;
-
-}

@@ -2,7 +2,7 @@
 
 {% block stylesheets %}
     {{ parent() }}
-<link rel="stylesheet" href="{{ asset('css/bieres.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('CSS/bieres.css') }}" type="text/css" />
 
 {% endblock %}
 
@@ -14,23 +14,25 @@
 
     {% block content %}
 
-
-
-        <!-- Liste des bières -->
+<!-- Liste des bières -->
         <div class="row">
             {% for biere in bieres %}
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <a href="#" class="thumbnail">
-                        <img src="{{ asset('images/' ~ biere.image) }}" alt="" />
-                        <h2> {{ biere.nom }} </h2>
+                        <img src="{{ asset('upload/' ~ biere.image) }}" alt="" />
+
+                        <h1 class="h1bieres"> {{ biere.nom }} </h1>
                         <p> {{ biere.contenu }} </p>
                     </a>
                 </div>
 
             {% endfor %}
-
         </div>
 
+    {% endblock %}
+
+    {% block footer %}
+        {{ parent() }}
     {% endblock %}
 
 
