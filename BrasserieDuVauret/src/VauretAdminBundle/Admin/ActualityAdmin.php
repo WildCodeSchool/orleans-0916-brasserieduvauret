@@ -8,8 +8,10 @@ use Sonata\AdminBundle\Show\ShowMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Sonata\AdminBundle\Admin\AbstractAdmin;
 
-class ActualityAdmin extends Admin
+class ActualityAdmin extends AbstractAdmin
 {
     // Fields to be shown on create/edit forms
     protected function configureFormFields(FormMapper $formMapper)
@@ -17,8 +19,22 @@ class ActualityAdmin extends Admin
         $formMapper
             ->add('titre')
             ->add('contenu')
-            ->add('imageactu')
+            ->add('file', 'file', array('required' => false))
         ;
+    }
+
+    public function prePersist($image) {
+        $this->manageFileUpload($image);
+    }
+
+    public function preUpdate($image) {
+        $this->manageFileUpload($image);
+    }
+
+    private function manageFileUpload($image) {
+        if ($image->getFile()) {
+            $image->refreshUpdated();
+        }
     }
 
     // Fields to be shown on filter forms
@@ -27,7 +43,7 @@ class ActualityAdmin extends Admin
         $datagridMapper
             ->add('titre')
             ->add('contenu')
-            ->add('imageactu')
+            ->add('filename')
         ;
     }
 
@@ -37,7 +53,7 @@ class ActualityAdmin extends Admin
         $listMapper
             ->addIdentifier('titre')
             ->add('contenu')
-            ->add('imageactu')
+            ->add('filename')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'view' => array(),
@@ -55,7 +71,7 @@ class ActualityAdmin extends Admin
             ->add('id')
             ->add('titre')
             ->add('contenu')
-            ->add('imageactu')
+            ->add('filename')
         ;
     }
 }

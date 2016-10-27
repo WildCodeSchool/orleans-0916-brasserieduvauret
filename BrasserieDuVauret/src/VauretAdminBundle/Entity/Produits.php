@@ -148,20 +148,6 @@ class Produits
     }
 
     /**
-     * Sets file.
-     *
-     * @param UploadedFile $file
-     */
-
-
-    public function setFile($file)
-    {
-        $this->image = $file;
-
-        return $this;
-    }
-
-    /**
      * Get file.
      *
      * @return UploadedFile
@@ -170,6 +156,14 @@ class Produits
     public function getFile()
     {
         return $this->file;
+    }
+
+    /**
+     * @param mixed $file
+     */
+    public function setFile($file)
+    {
+        $this->file = $file;
     }
 
     /**
