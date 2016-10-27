@@ -14,6 +14,12 @@
 
     {% block content %}
 
+        <form action="{{ path('BrasserieBundle_contact') }}" method="post" {{ form_enctype(form) }}>
+            {{ form_widget(form) }}
+
+            <input type="submit" />
+        </form>
+
         <!---Formulaire de contact------>
         <h2 class="contact">Contactez-nous !</h2>
         <form>

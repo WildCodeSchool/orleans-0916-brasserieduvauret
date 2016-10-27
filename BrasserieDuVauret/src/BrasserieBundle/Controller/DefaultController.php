@@ -4,11 +4,15 @@ namespace BrasserieBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use BrasserieBundle\Entity\Enquiry;
+use BrasserieBundle\Form\EnquiryType;
+use Symfony\Component\HttpFoundation\Request;
+
 
 class DefaultController extends Controller
 {
     /**
-     * @Route("/")
+     * @Route("/", name="accueil")
      */
     public function indexAction()
     {
@@ -57,12 +61,25 @@ class DefaultController extends Controller
     /**
      * @Route("/contact")
      */
-    public function contactAction()
+    public function contactAction(Request $request)
     {
-        return $this->render('BrasserieBundle:Default:contact.html.twig');
+        // just setup a fresh $task object (remove the dummy data)
+        $enquiry = new Enquiry();
+
+        $form = $this->createForm(new EnquiryType(), $enquiry);
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            // $form->getData() holds the submitted values
+            // but, the original `$task` variable has also been updated
+            $task = $form->getData();
+
+
+            return $this->redirectToRoute('accueil');
+
+        }
+        return $this->render('BrasserieBundle:Default:contact.html.twig',array(
+        'form' => $form->createView()));
     }
-
-
-
-
 }
