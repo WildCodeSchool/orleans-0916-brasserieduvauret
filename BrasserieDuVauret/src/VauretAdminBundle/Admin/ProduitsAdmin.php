@@ -10,6 +10,7 @@ use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 
 
@@ -26,8 +27,20 @@ class ProduitsAdmin extends AbstractAdmin
             ->add('contenu')
             ->add('file', 'file', array(
                 'required' => false))
-            ->add('une')
-            ->add('prod');
+            ->add('une', ChoiceType::class, array(
+                'choices'  => array(
+                    'Oui' => true,
+                    'Non' => false,
+                ),
+                'choices_as_values' => true,
+            ))
+            ->add('prod', ChoiceType::class, array(
+                'choices'  => array(
+                    'Oui' => true,
+                    'Non' => false,
+                ),
+                'choices_as_values' => true,
+            ));
     }
 
     public function prePersist($image)

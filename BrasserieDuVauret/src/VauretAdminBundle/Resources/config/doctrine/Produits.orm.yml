@@ -20,10 +20,10 @@ VauretAdminBundle\Entity\Produits:
             length: 100
         une:
             type: string
-            length: '3'
+            length: '6'
         prod:
             type: string
-            length: '3'
+            length: '6'
         updated:
             type:         datetime
             nullable:     true

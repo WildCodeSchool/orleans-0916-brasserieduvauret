@@ -1,20 +1,25 @@
 VauretAdminBundle\Entity\Actuality:
     type: entity
-    table: null
+    table: actuality
     repositoryClass: VauretAdminBundle\Repository\ActualityRepository
     id:
-        id:
-            type: integer
-            id: true
-            generator:
-                strategy: AUTO
+      id:
+        type:         integer
+        id:           true
+        generator:    { strategy: AUTO }
     fields:
-        titre:
-            type: string
-            length: '150'
-        contenu:
-            type: text
-        imageactu:
-          type: string
-          lenght: '255'
-    lifecycleCallbacks: {  }
+      titre:
+        type:         string
+        length:       '150'
+      contenu:
+        type:         text
+      filename:
+        type:         string
+        length:       100
+      updated:
+        type:         datetime
+        nullable:     true
+
+    lifecycleCallbacks:
+        prePersist:   [ lifecycleFileUpload ]
+        preUpdate:    [ lifecycleFileUpload ]
