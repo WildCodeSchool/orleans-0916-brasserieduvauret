@@ -3,7 +3,7 @@
 {% block stylesheets %}
     {{ parent() }}
 
-    <link rel="stylesheet" href="{{ asset('css/actualites.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('CSS/actualites.css') }}" type="text/css" />
 
 {% endblock %}
 
@@ -17,21 +17,24 @@
 
         {% block content %}
 
-            <div class="container-fluid">
+            <div class="container-fluid actuall">
                 <div class="row">
-                    <div class="col-lg-12 brass">
-
-
-                        <img src="{{ asset('images/actualites.jpg/') }}" alt="" />
-                        <h1>Actualites 1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti earum molestias odio optio quaerat.<br>
-                            Aspernatur deleniti facere, harum illum in incidunt ipsam iste maiores praesentium quam rerum soluta ut voluptas.</p>
-
-                        <h1>Actualites 2</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti earum molestias odio optio quaerat.<br>
-                            Aspernatur deleniti facere, harum illum in incidunt ipsam iste maiores praesentium quam rerum soluta ut voluptas.</p>
+                    <div class="jumbotron">
 
                     </div>
+            {% for actu in actualites %}
+                    <div class="col-lg-12 brass">
+
+                     </div>
+                    <div class="col-lg-3 col-md-3 col-xs-2">
+                        <img class="img-responsive imgactu img-rounded" src="{{ asset('upload/' ~ actu.filename) }}" alt="" />
+                     </div>
+                    <div class="col-lg-9 col-md-7 col-xs-5">
+                        <h2> {{ actu.titre }} </h2>
+                        <p class="contenuactu"> {{ actu.contenu }} </p>
+                    </div>
+            {% endfor %}
+
                 </div>
             </div>
 

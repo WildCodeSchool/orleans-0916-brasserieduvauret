@@ -12,6 +12,7 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
+
         return $this->render('BrasserieBundle:Default:index.html.twig');
     }
 
@@ -28,7 +29,13 @@ class DefaultController extends Controller
      */
     public function actualitesAction()
     {
-        return $this->render('BrasserieBundle:Default:actualites.html.twig');
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('VauretAdminBundle:Actuality');
+
+        $listActuality = $repository->findAll();
+
+        return $this->render('BrasserieBundle:Default:actualites.html.twig' , array('actualites'=>$listActuality));
     }
 
     /**
