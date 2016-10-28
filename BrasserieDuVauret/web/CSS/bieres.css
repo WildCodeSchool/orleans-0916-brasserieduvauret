@@ -1,45 +1,36 @@
-.row{
-
-    margin-bottom: 5em;
-
-}
-
-
-
-
-.view img {
-    display: block;
-    position: relative
-}
-
-.bieresfd {
-    color: white;
-    background-color:#E1CE9A;
-
+.bieres {
+    text-align: center;
 }
 
 
 .h1bieres {
-    color: white;
-    background-color: darkorange;
 
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #000;
 }
 
-.bieresdumois {
-     background-color: #00a7d0;
-    height: 100%;
 
- }
- /*   margin-bottom: 30px; */
-
-
-.flottant {
-    float:left;
+.imgbieres {
+    width: 400px;
+    border-radius: 5%;
 }
 
-.pleft {
-    margin-left: 35em;
-    margin-bottom: 30em;
-    white-space:normal;
+.photo-modal {
+    width: 300px;
+    margin-bottom: 30px;
+    border-radius: 5%;
+}
 
+.modal-title {
+
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #000;
+}
+
+.p-modal {
+
+    font-size: 2rem;
+    color: #000;
 }

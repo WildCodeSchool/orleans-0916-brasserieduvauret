@@ -62,7 +62,13 @@ class DefaultController extends Controller
         return $this->render('BrasserieBundle:Default:contact.html.twig');
     }
 
-
+    /**
+     * @Route("/mentions")
+     */
+    public function mentionsAction()
+    {
+        return $this->render('BrasserieBundle:Default:mentionslegales.html.twig');
+    }
 
 
 }
