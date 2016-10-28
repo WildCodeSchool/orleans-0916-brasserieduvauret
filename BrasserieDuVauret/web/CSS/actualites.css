@@ -5,3 +5,9 @@
     margin-top: 25px;
     margin-bottom: 25px;
 }
+.actuimg {
+    background-image: url("../images/actuimg.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 900px;
+}
