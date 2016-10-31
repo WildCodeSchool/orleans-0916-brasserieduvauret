@@ -1,5 +1,6 @@
 .bieres {
     text-align: center;
+    padding-top: 30px;
 }
 
 
@@ -12,7 +13,7 @@
 
 
 .imgbieres {
-    width: 400px;
+    width: 300px;
     border-radius: 5%;
 }
 
@@ -33,4 +34,22 @@
 
     font-size: 2rem;
     color: #000;
+}
+.beerbtn {
+    margin-bottom: 50px;
+    margin-top: 18px;
+}
+.beertop {
+    background-image: url("../images/topbeer.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+.beeraccro {
+    font-size: 80px;
+    font-family: 'Roman-Antique';
+    padding-top: 10%;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
 }
