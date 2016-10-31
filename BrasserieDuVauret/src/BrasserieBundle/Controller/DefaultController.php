@@ -66,17 +66,52 @@ class DefaultController extends Controller
         // just setup a fresh $task object (remove the dummy data)
         $enquiry = new Enquiry();
 
-        $form = $this->createForm(new EnquiryType(), $enquiry);
-
+        $form = $this->createForm(EnquiryType::class, $enquiry);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            // $form->getData() holds the submitted values
-            // but, the original `$task` variable has also been updated
-            $task = $form->getData();
+
+            $nom = $form["nom"]->getData();
+            $prenom = $form["prenom"]->getData();
+            $telephone = $form["telephone"]->getData();
+            $email = $form["email"]->getData();
+            $commentaire = $form["commentaire"]->getData();
 
 
-            return $this->redirectToRoute('accueil');
+            $message = \Swift_Message::newInstance()
+
+                ->setSubject('Brasserie du Vauret : Vous avez un nouveau message : ')
+                ->setFrom('send@example.com')
+                ->setTo('sancho4582@gmail.com')
+                ->setCharset('UTF-8')
+                ->setContentType('text/html')
+
+                ->setBody($this->renderView('Emails/reponse.html.twig', array('nom' => $nom,
+                                                                             'prenom'=>$prenom,
+                                                                             'telephone' => $telephone,
+                                                                             'email'=>$email,
+                                                                             'commentaire' => $commentaire
+                                                                            )
+
+
+                                           )
+                        );
+
+
+
+                  /*  $this->renderView(
+                    // app/Resources/views/Emails/registration.html.twig
+                        'Emails/registration.html.twig',
+                        array('name' => $name)
+                    ),*/
+
+
+
+            $this->get('mailer')->send($message);
+
+            //return $this->render(...);
+
+
 
         }
         return $this->render('BrasserieBundle:Default:contact.html.twig',array(

@@ -3,6 +3,13 @@
 
 namespace BrasserieBundle\Entity;
 
+use Symfony\Component\Validator\Mapping\ClassMetadata;
+use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Validator\Constraints\Email;
+use Symfony\Component\Validator\Constraints\Length;
+
+
+
 class Enquiry
 {
     protected $nom;
@@ -64,4 +71,20 @@ class Enquiry
     {
         $this->commentaire = $commentaire;
     }
+
+    /*public static function loadValidatorMetadata(ClassMetadata $metadata)
+    {
+        $metadata->addPropertyConstraint('nom', new NotBlank());
+
+        $metadata->addPropertyConstraint('prenom', new NotBlank());
+
+        $metadata->addPropertyConstraint('email', new Email());
+
+        $metadata->addPropertyConstraint('telephone', new NotBlank());
+
+        $metadata->addPropertyConstraint( 'commentaire', new NotBlank());
+
+
+    }*/
+
 }

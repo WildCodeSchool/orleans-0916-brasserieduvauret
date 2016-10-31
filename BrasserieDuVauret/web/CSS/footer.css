@@ -1,14 +1,22 @@
-.foot-contact {
-	text-align: center;
-	color : white;
-	font-family: 'Roman-Antique';
-}
+
 
 .foot-menu {
 	text-align: center;
 	color : white;
 	font-family: 'Roman-Antique';
 	padding-left:30px;
+	font-size:40px;
+	margin:auto;
+
+}
+
+
+.foot-menu-news {
+    text-align: center;
+    color : white;
+    font-family: 'Roman-Antique';
+    font-size:40px;
+    margin:auto;
 
 }
 
@@ -17,7 +25,7 @@
 	margin-top: 3px;
 	color :white;
 	font-size: 20px;
-	font-family: 'Roman-Antique';
+	font-family: 'candelabook';
 	text-align: center;
 }
 
@@ -36,7 +44,9 @@
 
 }
 .foot-input {
-	margin: 40px auto auto 20%;
+	/*margin: 40px auto auto 20%;*/
+	width: 200px;
+	margin: auto;
 }
 
 .liste-mention {
@@ -53,14 +63,22 @@ li {
 
 
 .foot-logowild {
-	height: 10%;
-	width: 10%;
-}
+    height: 20%;
+    width: 20%;
 
+
+}
 .foot-news-text {
 	margin-top: 3px;
 	color :white;
 	font-size: 20px;
-	font-family: 'Roman-Antique';
+	font-family: 'candelabook';
 	text-align: center;
 }
+
+.wcs {
+    margin-top: 15px;
+    text-align: center;
+}
+
+

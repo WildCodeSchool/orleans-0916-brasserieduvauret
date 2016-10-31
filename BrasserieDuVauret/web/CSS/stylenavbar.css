@@ -1,12 +1,13 @@
 .nav {
     margin-top: 40px;
+
 }
 
 .navbar-brand {
 
   margin-top: 15px;
+  margin-bottom: 50px:
 
-  margin-bottom: 50px;
 }
 
 .navbar-toggle .icon-bar:nth-of-type(1) {
