@@ -7,11 +7,17 @@
 .test {
     min-width: 300px;
 }
-.image_une {
+.imgune {
     margin-bottom: 10px;
-    height: 600px;
+    height: 500px;
+    margin: auto;
+    border: 5px solid grey;
 }
-
+.unetitle {
+    font-family: 'Roman-Antique';
+    font-size: 30px;
+    text-align: center;
+}
 html,
 body {
     height: 100%;
@@ -43,3 +49,22 @@ body {
     border-right: 3px solid grey;
     height: 500px;
 }
+.fbifra {
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    border: none;
+ }
+.unemoment {
+    margin-top: -70px;
+    font-family: 'Roman-Antique';
+    font-size: 50px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+.heightune {
+    height: 800px;
+
+}
+
+

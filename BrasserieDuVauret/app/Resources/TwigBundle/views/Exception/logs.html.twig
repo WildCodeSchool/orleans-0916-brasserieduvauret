@@ -1,3 +1,4 @@
+{% extends 'BrasserieBundle::layout.html.twig' %}
 <ol class="traces logs">
     {% for log in logs %}
         <li{% if log.priority >= 400 %} class="error"{% elseif log.priority >= 300 %} class="warning"{% endif %}>

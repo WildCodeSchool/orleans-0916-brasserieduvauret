@@ -9,8 +9,20 @@
     background-image: url("../images/actuimg.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 900px;
+    height: 450px;
 }
 .actutitle {
     font-family: 'Roman-Antique';
+}
+.brass {
+    margin-top: 25px;
+}
+.actuaccro {
+    font-size: 80px;
+    font-family: 'Roman-Antique';
+    padding-top: 10%;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+
 }

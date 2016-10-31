@@ -20,7 +20,7 @@
             <div class="container-fluid actuall">
                 <div class="row">
                     <div class="actuimg">
-
+                        <h1 class="display-3 actuaccro">"Suivez nos actualités !"</h1>
                     </div>
             {% for actu in actualites %}
                     <div class="col-lg-12 brass">
@@ -30,7 +30,7 @@
                         <img class="img-responsive imgactu img-rounded" src="{{ asset('upload/' ~ actu.filename) }}" alt="" />
                      </div>
                     <div class="col-lg-9 col-md-7 col-xs-5">
-                        <h1 class="actutitle"> {{ actu.titre }} </h1>
+                        <h2 class="actutitle"> {{ actu.titre }} </h2>
                         <p class="contenuactu"> {{ actu.contenu }} </p>
                     </div>
             {% endfor %}
