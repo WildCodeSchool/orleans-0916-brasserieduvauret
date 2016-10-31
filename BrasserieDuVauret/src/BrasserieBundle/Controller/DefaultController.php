@@ -17,7 +17,7 @@ class DefaultController extends Controller
             ->getRepository('VauretAdminBundle:Produits');
 
         $listProduits = $repository->findBy(array('une' => '1'));
-
+        
     return $this->render('BrasserieBundle:Default:index.html.twig' , array('index'=>$listProduits));
     }
     /**
@@ -73,7 +73,13 @@ class DefaultController extends Controller
         return $this->render('BrasserieBundle:Default:contact.html.twig');
     }
 
-
+    /**
+     * @Route("/mentions")
+     */
+    public function mentionsAction()
+    {
+        return $this->render('BrasserieBundle:Default:mentionslegales.html.twig');
+    }
 
 
 }

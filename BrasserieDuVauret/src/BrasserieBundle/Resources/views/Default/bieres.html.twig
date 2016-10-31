@@ -2,7 +2,7 @@
 
 {% block stylesheets %}
     {{ parent() }}
-<link rel="stylesheet" href="{{ asset('css/bieres.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ asset('CSS/bieres.css') }}" type="text/css" />
 
 {% endblock %}
 
@@ -17,10 +17,51 @@
 
 
         <!-- Liste des bières -->
-        <div class="row">
+        <div class="row bieres">
             {% for biere in bieres %}
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <a href="#" class="thumbnail">
+<<<<<<< HEAD
+                        <img src="{{ asset('upload/' ~ biere.filename) }}" class="imgbieres" alt="" />
+                        <h1 class="h1bieres"> {{ biere.nom }} </h1>
+
+                        <!-- Debut fenetre modale -->
+                        <div id="gridSystemModal{{ loop.index }}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h2 class="modal-title" id="gridModalLabel">{{ biere.nom }}</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid bd-example-row">
+                                            <div class="row">
+                                                <img src="{{ asset('upload/' ~ biere.filename) }}" class="photo-modal" alt="image de {{ biere.nom }}" />
+                                                <p class="p-modal"> {{ biere.contenu }} </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bouton Fermer fenetre modale -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                       <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                    <!-- fin Bouton Fermer fenetre modale -->
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                        <!-- fin fenetre modale -->
+
+                        <!-- Bouton Modal En savoir plus -->
+                        <div class="bd-example bd-example-padded-bottom">
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#gridSystemModal{{ loop.index }}">
+                                En savoir plus !
+                            </button>
+                        </div>
+                        <!-- fin Bouton Modal En savoir plus -->
+=======
+>>>>>>> master
                         <img src="{{ asset('upload/' ~ biere.filename) }}" alt="{{ biere.nom }}" />
                         <h2> {{ biere.nom }} </h2>
                         <p> {{ biere.contenu }} </p>
@@ -32,6 +73,5 @@
         </div>
 
     {% endblock %}
-
 
 {% endblock %}
