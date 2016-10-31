@@ -12,10 +12,14 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('VauretAdminBundle:Produits');
 
-        return $this->render('BrasserieBundle:Default:index.html.twig');
+        $listProduits = $repository->findBy(array('une' => '1'));
+
+    return $this->render('BrasserieBundle:Default:index.html.twig' , array('index'=>$listProduits));
     }
-
     /**
      * @Route("/brasserie")
      */
@@ -48,7 +52,7 @@ class DefaultController extends Controller
                             ->getManager()
                             ->getRepository('VauretAdminBundle:Produits');
 
-        $listProduits = $repository->findAll();
+        $listProduits = $repository->findBy(array('prod' => '1'));
 
         return $this->render('BrasserieBundle:Default:bieres.html.twig' , array('bieres'=>$listProduits));
     }
