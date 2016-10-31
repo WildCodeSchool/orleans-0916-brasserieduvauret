@@ -11,9 +11,7 @@ use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-
-
-
+use Symfony\Component\Form\Extension\Core\Type\FormType;
 
 
 class ProduitsAdmin extends AbstractAdmin

@@ -1,0 +1,10 @@
+.logtitle {
+    font-family: 'Roman-Antique';
+    color: #ffffff;
+    text-align: center;
+    font-size: 100px;
+}
+.logblock {
+    background: url('./web/images/image_accueil.JPG') no-repeat fixed center center;
+    height: 800px;
+}

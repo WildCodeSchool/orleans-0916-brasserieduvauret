@@ -1,45 +1,55 @@
-.row{
-
-    margin-bottom: 5em;
-
-}
-
-
-
-
-.view img {
-    display: block;
-    position: relative
-}
-
-.bieresfd {
-    color: white;
-    background-color:#E1CE9A;
-
+.bieres {
+    text-align: center;
+    padding-top: 30px;
 }
 
 
 .h1bieres {
+
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #000;
+}
+
+
+.imgbieres {
+    width: 300px;
+    border-radius: 5%;
+}
+
+.photo-modal {
+    width: 300px;
+    margin-bottom: 30px;
+    border-radius: 5%;
+}
+
+.modal-title {
+
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #000;
+}
+
+.p-modal {
+
+    font-size: 2rem;
+    color: #000;
+}
+.beerbtn {
+    margin-bottom: 50px;
+    margin-top: 18px;
+}
+.beertop {
+    background-image: url("../images/topbeer.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+.beeraccro {
+    font-size: 80px;
+    font-family: 'Roman-Antique';
+    padding-top: 10%;
+    text-align: center;
     color: white;
-    background-color: darkorange;
-
-}
-
-.bieresdumois {
-     background-color: #00a7d0;
-    height: 100%;
-
- }
- /*   margin-bottom: 30px; */
-
-
-.flottant {
-    float:left;
-}
-
-.pleft {
-    margin-left: 35em;
-    margin-bottom: 30em;
-    white-space:normal;
-
+    text-shadow: 3px 3px 3px black;
 }
