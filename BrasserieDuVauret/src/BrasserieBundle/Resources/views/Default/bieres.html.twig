@@ -59,7 +59,9 @@
                             </button>
                         </div>
                         <!-- fin Bouton Modal En savoir plus -->
-
+                        <img src="{{ asset('upload/' ~ biere.filename) }}" alt="{{ biere.nom }}" />
+                        <h2> {{ biere.nom }} </h2>
+                        <p> {{ biere.contenu }} </p>
                     </a>
                 </div>
 
