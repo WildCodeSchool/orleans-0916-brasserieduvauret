@@ -4,11 +4,15 @@ namespace BrasserieBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use BrasserieBundle\Entity\Enquiry;
+use BrasserieBundle\Form\EnquiryType;
+use Symfony\Component\HttpFoundation\Request;
+
 
 class DefaultController extends Controller
 {
     /**
-     * @Route("/")
+     * @Route("/", name="accueil")
      */
     public function indexAction()
     {
@@ -68,18 +72,56 @@ class DefaultController extends Controller
     /**
      * @Route("/contact")
      */
-    public function contactAction()
+    public function contactAction(Request $request)
     {
-        return $this->render('BrasserieBundle:Default:contact.html.twig');
+        // just setup a fresh $task object (remove the dummy data)
+        $enquiry = new Enquiry();
+
+        $form = $this->createForm(EnquiryType::class, $enquiry);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            $nom = $form["nom"]->getData();
+            $prenom = $form["prenom"]->getData();
+            $telephone = $form["telephone"]->getData();
+            $email = $form["email"]->getData();
+            $commentaire = $form["commentaire"]->getData();
+
+
+            $message = \Swift_Message::newInstance()
+
+                ->setSubject('Brasserie du Vauret : Vous avez un nouveau message : ')
+                ->setFrom('send@example.com')
+                ->setTo('sancho4582@gmail.com')
+                ->setCharset('UTF-8')
+                ->setContentType('text/html')
+
+                ->setBody($this->renderView('Emails/reponse.html.twig', array('nom' => $nom,
+                                                                             'prenom'=>$prenom,
+                                                                             'telephone' => $telephone,
+                                                                             'email'=>$email,
+                                                                             'commentaire' => $commentaire
+                                                                            )));
+
+            $this->get('mailer')->send($message);
+
+            //return $this->render(...);
+
+        }
+        return $this->render('BrasserieBundle:Default:contact.html.twig',array(
+        'form' => $form->createView()));
     }
 
-    /**
-     * @Route("/mentions")
-     */
-    public function mentionsAction()
-    {
-        return $this->render('BrasserieBundle:Default:mentionslegales.html.twig');
-    }
 
+
+
+/**
+ * @Route("/mentions")
+ */
+public function mentionsAction()
+{
+    return $this->render('BrasserieBundle:Default:mentionslegales.html.twig');
+}
 
 }

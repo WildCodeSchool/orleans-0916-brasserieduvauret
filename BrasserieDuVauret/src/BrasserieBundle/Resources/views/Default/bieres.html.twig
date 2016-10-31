@@ -1,8 +1,10 @@
 {% extends 'BrasserieBundle::layout.html.twig' %}
 
-{% block stylesheets %}
+{% block head %}
     {{ parent() }}
+
 <link rel="stylesheet" href="{{ asset('CSS/bieres.css') }}" type="text/css" />
+
 
 {% endblock %}
 
@@ -13,6 +15,13 @@
     {% endblock %}
 
     {% block content %}
+
+
+        <div class="container-fluid row bierebloc">
+
+        <h1 class="slogan2">"Les bières sont non filtrées,</br>non pasteurisées et refermentées en bouteille"</h1>
+        </div>
+
         <!-- Liste des bières -->
         <div class="beertop">
             <h1 class="display-3 beeraccro">"Découvrez notre gamme de bière"</h1>
@@ -59,11 +68,15 @@
                         </div>
                         <!-- fin Bouton Modal En savoir plus -->
                 </div>
-
             {% endfor %}
-
         </div>
 
+    {% endblock %}
+
+
+
+    {% block footer %}
+        {{ parent() }}
     {% endblock %}
 
 {% endblock %}

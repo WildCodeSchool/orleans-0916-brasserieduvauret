@@ -32,6 +32,7 @@
 
 .p-modal {
 
+
     font-size: 2rem;
     color: #000;
 }
@@ -52,4 +53,14 @@
     text-align: center;
     color: white;
     text-shadow: 3px 3px 3px black;
+
+}
+.bierebloc {
+    background-image: url('./image/houblon.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 800px;
+    padding: 0;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head>{% block head %}
+
         <meta charset="UTF-8" />
         <title>{% block title %}
                 Brasserie du Vauret
@@ -14,6 +15,7 @@
             <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/jumbo.css')}}">
             <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/map.css')}}">
             <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/3ronds.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{ asset('CSS/contact.css') }}">
             <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/formulaire.css')}}">
             <link rel="stylesheet" type="text/css" href="{{'CSS/content.css'}}">
             <link rel="stylesheet" type="text/css" href="{{ asset('CSS/stylenavbar.css')}}">
@@ -27,10 +29,10 @@
             <script src="{{ asset ('js/bootstrap.min.js')}}"></script>
         {% endblock %}
 
-
         <link rel="icon" type="image/png" sizes="16x16" href="{{'img/favicon-16x16.png'}}">
 
-    </head>
+
+    </head>{% endblock %}
 
     <body>
 
@@ -54,7 +56,7 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
                         </button>
 
-                        <a class="navbar-brand" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php"> <img src="{{ asset('img/logo.png')}}" alt="Logo de la brasserie du vauret" class="img-responsive logo" />
+                        <a class="navbar-brand" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php"> <img src="{{ asset('img/logo.png')}}"  alt="Logo de la brasserie du vauret" class="img-responsive logo" />
                         </a>
 
                     </div>
@@ -93,7 +95,7 @@
                             <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/pointsdevente">Nos points de vente</a>
                         </li>
                         <li class="foot_list">
-                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/bieres">actualites</a>
+                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/bieres">Actualites</a>
                         </li>
                         <li class="foot_list">
                             <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/contact">Contact</a><br/>
@@ -104,7 +106,7 @@
                 </div>
 
                 <div class="col-lg-offset-1 col-lg-3 foot-bloc2">
-                    <h2 class="foot-menu">Contact</h2>
+                    <h2 class="foot-menu">Brasserie du Vauret</h2>
 
                     <ul>
                         <li class="foot_list">
@@ -114,14 +116,13 @@
                             07 83 76 08 49
                         </li>
                         <li class="foot_list">
-                           Cyril.bourassin[@]gmail.com
+                           Cyril.bourassin[a]free.fr
                         </li>
                         <li class="foot_list">
                             <a href="https://www.facebook.com/brasserieduvauret" target="_blank"><img class="foot-logofb" src="{{ asset('img/facebook.png')}}" alt="Logo Facebook" ></a></li>
-                        </li>
                         <li class="foot_list">
-                            <a class="liste-mention" href="#">Mentions Légales - </a>
-                            <a href="http://www.wildcodeschool.fr/" target="_blank"><img class="foot-logowild" src="{{ asset('img/wildcodeschool.png')}}" alt="Logo wild code school" ></a></li>
+                            <a class="liste-mention" href="#">Mentions Légales</a>
+
                         </li>
 
                     </ul>
@@ -130,16 +131,19 @@
 
                 <div class="col-lg-offset-2 col-lg-3 col-md-offset-4 col-md-4 col-sm-12 col-xs-12 foot-bloc3">
                     <div class="foot-contact">
-                        <h2>Newsletter</h2>
-                        <p class="foot-news-text">Recevez notre newsletter</br>en vous abonnant ici :</p>
+                        <h2 class="foot-menu-news">Newsletter</h2>
+                        <p class="foot-news-text">Recevez notre newsletter<br/>en vous abonnant ici :</p>
                         <div class="input-group foot-input">
-                            <input type="text" class="form-control" placeholder="Newsletter">
-                            <span class="input-group-btn" ><button class="btn btn-warning" type="button" >Envoyer</button></span>
+                            <input type="text" class="form-control" placeholder="Votre email">
+                             <button type="button" class="btn btn-warning">Envoyer</button>
+                        </div>
+                        <div class="wcs">
+                        <a href="http://www.wildcodeschool.fr/" target="_blank"><img class="foot-logowild" src="{{ asset('img/wildcodeschool.png')}}" alt="Logo wild code school" ></a></li>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+
+
 
 
         <div class="container-fluid foot-back">
