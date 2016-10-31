@@ -1,6 +1,8 @@
 .h1brass {
-    color: white;
-    background-color: darkorange;
+    color: black;
+    font-family: 'Roman-Antique';
+    text-align: center;
+    font-size: 50px;
 
 }
 .brasstop {
@@ -17,6 +19,13 @@
     text-align: center;
     color: white;
     text-shadow: 3px 3px 3px black;
+}
+.brasspara {
+    text-align: justify;
+}
+.brassimgsch {
+    width: 50%;
+    margin: auto;
 }
 
 
