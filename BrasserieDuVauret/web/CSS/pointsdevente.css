@@ -1,9 +1,25 @@
-.bg_pdv {
+
+.titre-pdv {
+    text-align: center;
+    font-family: 'Roman-Antique';
+    font-size: 50px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+.ssTitre_pdv {
+    text-align: center;
+    font-family: 'Roman-Antique';
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+.pdvBloc {
     background-image: url('./image/houblon.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 800px;
+    height: 170px;
     padding: 0;
 }
