@@ -4,6 +4,21 @@
     font-family: Roman-Antique;
 }
 
+.ctcbloc {
+    background-image: url('../images/topcontact.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+.ctcaccro {
+    font-size: 80px;
+    font-family: 'Roman-Antique';
+    padding-top: 8%;
+    text-align: center;
+    color: black;
+    text-shadow: 3px 3px 3px white;
+}
+
 /*.contactBloc {
     background-image: url('./image/houblon.jpg');
     background-attachment: fixed;
