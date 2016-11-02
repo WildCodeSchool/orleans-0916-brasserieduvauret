@@ -63,11 +63,11 @@
 
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li role="presentation" class="active"><a class="onglet" href="href="{{ path('accueil') }}">Accueil</a></li>
+                            <li role="presentation" class="active"><a class="onglet" href="{{ path('accueil') }}">Accueil</a></li>
                             <li class="active"><a class="onglet" href="{{ path('bieres') }}">Bières</a></li>
                             <li class="active"><a class="onglet" href="{{ path('brasserie') }}">Brasserie</a></li>
-                            <li class="active"><a class="onglet" href="{{ path('pointsdevente') }}"">Points de vente</a></li>
-                            <li class="active"><a class="onglet" href="{{ path('actualites') }}"">Actualités</a></li>
+                            <li class="active"><a class="onglet" href="{{ path('pointsdevente') }}">Points de vente</a></li>
+                            <li class="active"><a class="onglet" href="{{ path('actualites') }}">Actualités</a></li>
                             <li class="active"><a class="onglet" href="{{ path('contact') }}">Contact</a></li>
                         </ul>
                     </div>
@@ -75,7 +75,7 @@
             {% endblock %}
 
 
-            {% block footer %}
+        {% block footer %}
         <div class="container-fluid foot-back">
             <div class="row">
                 <div class="col-lg-3 foot-bloc1">
@@ -131,8 +131,8 @@
                         <h2 class="foot-menu-news">Newsletter</h2>
                         <p class="foot-news-text">Recevez notre newsletter<br/>en vous abonnant ici :</p>
                         <div class="input-group foot-input">
-                            <input type="text" class="form-control" placeholder="Votre email">
-                             <button type="button" class="btn btn-warning">Envoyer</button>
+                           <span><input type="text" class="form-control" placeholder="Votre email">
+                             <button type="button" class="btn btn-warning">Envoyer</button></span>
                         </div>
                         <div class="wcs">
                         <a href="http://www.wildcodeschool.fr/" target="_blank"><img class="foot-logowild" src="{{ asset('img/wildcodeschool.png')}}" alt="Logo wild code school" ></a></li>
@@ -142,14 +142,10 @@
 
 
 
-
-        <div class="container-fluid foot-back">
-            <div class="row">
-
             </div>
             {% endblock %}
 
-        {% endblock %}
+            {% endblock %}
         </div>
     </body>
 
