@@ -64,19 +64,19 @@
 
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li role="presentation" class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php">Accueil</a></li>
-                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/bieres">Bières</a></li>
-                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/brasserie">Brasserie</a></li>
-                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/pointsdevente">Points de vente</a></li>
-                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/actualites">Actualités</a></li>
-                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/contact">Contact</a></li>
+                            <li role="presentation" class="active"><a class="onglet" href="{{ path('accueil') }}">Accueil</a></li>
+                            <li class="active"><a class="onglet" href="{{ path('bieres') }}">Bières</a></li>
+                            <li class="active"><a class="onglet" href="{{ path('brasserie') }}">Brasserie</a></li>
+                            <li class="active"><a class="onglet" href="{{ path('pointsdevente') }}">Points de vente</a></li>
+                            <li class="active"><a class="onglet" href="{{ path('actualites') }}">Actualités</a></li>
+                            <li class="active"><a class="onglet" href="{{ path('contact') }}">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             {% endblock %}
 
 
-            {% block footer %}
+        {% block footer %}
         <div class="container-fluid foot-back">
             <div class="row">
                 <div class="col-lg-3 foot-bloc1">
@@ -84,48 +84,45 @@
 
                     <ul>
                         <li class="foot_list">
-                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/">Accueil</a>
+                            <a class="liste_menu" href="{{ path('accueil') }}">Accueil</a>
                         </li>
                         <li class="foot_list">
-                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/bieres">Nos bières</a>
+                            <a class="liste_menu" href="{{ path('bieres') }}">Nos bières</a>
                         </li>
                         <li class="foot_list">
-                        <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/brasserie">La Brasserie</a>
+                        <a class="liste_menu" href="{{ path('brasserie') }}">La Brasserie</a>
                         </li>
                         <li class="foot_list">
-                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/pointsdevente">Nos points de vente</a>
+                            <a class="liste_menu" href="{{ path('pointsdevente') }}">Nos points de vente</a>
                         </li>
                         <li class="foot_list">
-                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/bieres">Actualites</a>
+                            <a class="liste_menu" href="{{ path('actualites') }}">Actualites</a>
                         </li>
                         <li class="foot_list">
-                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/contact">Contact</a><br/>
+                            <a class="liste_menu" href="{{ path('contact') }}">Contact</a><br/>
                         </li>
 
                     </ul>
 
                 </div>
 
-                <div class="col-lg-offset-1 col-lg-3 foot-bloc2">
+                <div class="col-lg-offset-1 col-lg-3 col-md-offset-4 col-md-4 col-sm-12 col-xs-12 foot-bloc2">
                     <h2 class="foot-menu">Brasserie du Vauret</h2>
 
                     <ul>
                         <li class="foot_list">
-                            501 avenue du Vauret</br> 45430 Mardié
                         </li>
                         <li class="foot_list">
                             07 83 76 08 49
                         </li>
                         <li class="foot_list">
-                           Cyril.bourassin[a]free.fr
+                           cyril.bourassin[a]free.fr
                         </li>
                         <li class="foot_list">
                             <a href="https://www.facebook.com/brasserieduvauret" target="_blank"><img class="foot-logofb" src="{{ asset('img/facebook.png')}}" alt="Logo Facebook" ></a></li>
                         <li class="foot_list">
                             <a class="liste-mention" href="#">Mentions Légales</a>
-
                         </li>
-
                     </ul>
 
                 </div>
@@ -135,8 +132,8 @@
                         <h2 class="foot-menu-news">Newsletter</h2>
                         <p class="foot-news-text">Recevez notre newsletter<br/>en vous abonnant ici :</p>
                         <div class="input-group foot-input">
-                            <input type="text" class="form-control" placeholder="Votre email">
-                             <button type="button" class="btn btn-warning">Envoyer</button>
+                           <span><input type="text" class="form-control" placeholder="Votre email">
+                             <button type="button" class="btn btn-warning">Envoyer</button></span>
                         </div>
                         <div class="wcs">
                         <a href="http://www.wildcodeschool.fr/" target="_blank"><img class="foot-logowild" src="{{ asset('img/wildcodeschool.png')}}" alt="Logo wild code school" ></a></li>
@@ -146,14 +143,10 @@
 
 
 
-
-        <div class="container-fluid foot-back">
-            <div class="row">
-
             </div>
             {% endblock %}
 
-        {% endblock %}
+            {% endblock %}
         </div>
     </body>
 
