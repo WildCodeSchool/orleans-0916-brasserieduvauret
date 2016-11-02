@@ -117,7 +117,7 @@ class DefaultController extends Controller
 
 
 /**
- * @Route("/mentions")
+ * @Route("/mentions", name="mentions")
  */
 public function mentionsAction()
 {

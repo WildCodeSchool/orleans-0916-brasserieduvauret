@@ -11,6 +11,11 @@
 .maptitle {
     font-family: 'Roman-Antique';
     text-align: center;
-    font-size: 30px;
-    margin-bottom: -50px;
+    font-size: 60px;
+    color: black;
+    text-shadow: 3px 3px 3px white;
+    margin-bottom: -11vh;
+    margin-top: 0;
+    position: relative;
+    z-index: 4;
 }
