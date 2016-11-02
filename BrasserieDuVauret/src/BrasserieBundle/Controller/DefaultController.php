@@ -25,7 +25,7 @@ class DefaultController extends Controller
     return $this->render('BrasserieBundle:Default:index.html.twig' , array('index'=>$listProduits));
     }
     /**
-     * @Route("/brasserie")
+     * @Route("/brasserie", name="brasserie")
      */
     public function brasserieAction()
     {
@@ -33,7 +33,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/actualites")
+     * @Route("/actualites", name="actualites")
      */
     public function actualitesAction()
     {
@@ -47,7 +47,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/bieres")
+     * @Route("/bieres", name="bieres")
      */
     public function bieresAction()
     {
@@ -62,7 +62,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/pointsdevente")
+     * @Route("/pointsdevente", name="pointsdevente")
      */
     public function pointsdeventeAction()
     {
@@ -70,7 +70,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/contact")
+     * @Route("/contact", name="contact")
      */
     public function contactAction(Request $request)
     {

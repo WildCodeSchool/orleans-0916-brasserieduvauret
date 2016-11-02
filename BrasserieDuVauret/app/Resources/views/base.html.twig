@@ -63,12 +63,12 @@
 
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li role="presentation" class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php">Accueil</a></li>
-                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/bieres">Bières</a></li>
-                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/brasserie">Brasserie</a></li>
-                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/pointsdevente">Points de vente</a></li>
-                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/actualites">Actualités</a></li>
-                            <li class="active"><a class="onglet" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/contact">Contact</a></li>
+                            <li role="presentation" class="active"><a class="onglet" href="href="{{ path('accueil') }}">Accueil</a></li>
+                            <li class="active"><a class="onglet" href="{{ path('bieres') }}">Bières</a></li>
+                            <li class="active"><a class="onglet" href="{{ path('brasserie') }}">Brasserie</a></li>
+                            <li class="active"><a class="onglet" href="{{ path('pointsdevente') }}"">Points de vente</a></li>
+                            <li class="active"><a class="onglet" href="{{ path('actualites') }}"">Actualités</a></li>
+                            <li class="active"><a class="onglet" href="{{ path('contact') }}">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -83,22 +83,22 @@
 
                     <ul>
                         <li class="foot_list">
-                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/">Accueil</a>
+                            <a class="liste_menu" href="{{ path('accueil') }}">Accueil</a>
                         </li>
                         <li class="foot_list">
-                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/bieres">Nos bières</a>
+                            <a class="liste_menu" href="{{ path('bieres') }}">Nos bières</a>
                         </li>
                         <li class="foot_list">
-                        <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/brasserie">La Brasserie</a>
+                        <a class="liste_menu" href="{{ path('brasserie') }}">La Brasserie</a>
                         </li>
                         <li class="foot_list">
-                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/pointsdevente">Nos points de vente</a>
+                            <a class="liste_menu" href="{{ path('pointsdevente') }}">Nos points de vente</a>
                         </li>
                         <li class="foot_list">
-                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/bieres">Actualites</a>
+                            <a class="liste_menu" href="{{ path('actualites') }}">Actualites</a>
                         </li>
                         <li class="foot_list">
-                            <a class="liste_menu" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php/contact">Contact</a><br/>
+                            <a class="liste_menu" href="{{ path('contact') }}">Contact</a><br/>
                         </li>
 
                     </ul>
@@ -121,9 +121,7 @@
                             <a href="https://www.facebook.com/brasserieduvauret" target="_blank"><img class="foot-logofb" src="{{ asset('img/facebook.png')}}" alt="Logo Facebook" ></a></li>
                         <li class="foot_list">
                             <a class="liste-mention" href="#">Mentions Légales</a>
-
                         </li>
-
                     </ul>
 
                 </div>
