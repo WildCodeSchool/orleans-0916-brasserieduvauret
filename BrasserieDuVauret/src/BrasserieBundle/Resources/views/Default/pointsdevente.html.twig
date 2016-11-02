@@ -2,9 +2,7 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('web/css/pointsdevente.css') }}" type="text/css" />
 {% endblock %}
-
 
 {% block body %}
 
@@ -14,13 +12,11 @@
 
     {% block content %}
 
-        <div class="container-fluid">
+        <div class="container-fluid pdvBloc">
             <div class="row">
                 <div class="col-lg-12 brass">
-                    <h1>Carte et Horaires des points de vente</h1>
-
-                    <h2>Vous pouvez nous trouver en fonction des horaires des marchés sur Orléans et son agglo :</h2>
-
+                    <h1 class="titre-pdv">Carte des points de vente de la Brasserie du Vauret</h1>
+                    <h2 class="ssTitre_pdv">Marchés, restaurants, cavistes... Faites votre choix !</h2>
                 </div>
             </div>
         </div>

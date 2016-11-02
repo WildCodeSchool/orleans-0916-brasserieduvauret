@@ -1,4 +1,16 @@
 .titre-contact {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    font-family: Roman-Antique;
 }
+
+/*.contactBloc {
+    background-image: url('./image/houblon.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 170px;
+    padding: 0;
+}
+*/
