@@ -14,12 +14,17 @@
     text-shadow: 3px 3px 3px black;
 }
 
-.pdvBloc {
-    background-image: url('./image/houblon.jpg');
+.pdvbloc {
+    background-image: url('../images/houblon.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 170px;
-    padding: 0;
+    height: 450px;
+}
+.pdvaccro {
+    font-size: 80px;
+    font-family: 'Roman-Antique';
+    padding-top: 8%;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
 }
