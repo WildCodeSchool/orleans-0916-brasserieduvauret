@@ -1,4 +1,4 @@
-.h1brass {
+.h2brass {
     color: black;
     font-family: 'Roman-Antique';
     text-align: center;
@@ -20,15 +20,29 @@
     color: white;
     text-shadow: 3px 3px 3px black;
 }
+.brasspara3 {
+    text-align: justify;
+    font-family: candelabook;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
 .brasspara {
     text-align: justify;
     font-family: candelabook;
     font-size: 25px;
 }
+
 .brassimgsch {
     width: 40%;
     margin: auto;
 }
 
+.brassimgbio {
+    width: 20%;
+    height: 20%;
+    margin: auto;
+    margin-bottom:20px;
+}
 
 
