@@ -22,9 +22,11 @@
 }
 .brasspara {
     text-align: justify;
+    font-family: candelabook;
+    font-size: 25px;
 }
 .brassimgsch {
-    width: 50%;
+    width: 40%;
     margin: auto;
 }
 

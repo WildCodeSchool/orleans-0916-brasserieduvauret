@@ -1,11 +1,11 @@
 {% extends 'BrasserieBundle::layout.html.twig' %}
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="{{ _charset }}" />
-        <title>An Error Occurred: {{ status_text }}</title>
-    </head>
-    <body>
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+
+
+        {% block content %}
         <h1>Oops! An Error Occurred</h1>
         <h2>The server returned a "{{ status_code }} {{ status_text }}".</h2>
 
@@ -13,5 +13,12 @@
             Something is broken. Please let us know what you were doing when this error occurred.
             We will fix it as soon as possible. Sorry for any inconvenience caused.
         </div>
-    </body>
-</html>
+        {% endblock %}
+
+
+
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+
+{% endblock %}

@@ -82,9 +82,10 @@ body {
     color: white;
     text-shadow: 3px 3px 3px black;
 }
-.heightune {
-    height: 800px;
-
+.backune {
+    background-image: url("../images/backactu.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 
