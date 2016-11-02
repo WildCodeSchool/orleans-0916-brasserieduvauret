@@ -32,11 +32,6 @@ class Produits
     /**
      * @var string
      */
-    private $numplaylist;
-
-    /**
-     * @var string
-     */
     private $contenu;
 
     /**
@@ -274,22 +269,6 @@ class Produits
     public function setUpdated($updated)
     {
         $this->updated = $updated;
-    }
-
-    /**
-     * @param mixed $numplaylist
-     */
-    public function setNumplaylist($numplaylist)
-    {
-        $this->numplaylist = $numplaylist;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getNumplaylist()
-    {
-        return $this->numplaylist;
     }
 
 }
