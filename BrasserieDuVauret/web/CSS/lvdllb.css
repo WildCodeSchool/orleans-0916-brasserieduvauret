@@ -1,0 +1,19 @@
+iframe {
+
+}
+.playtext {
+    text-align: justify;
+    font-family: candelabook;
+    font-size: 25px;
+    margin-left: auto;
+}
+.playimg {
+    width:400px;
+}
+.playtitle {
+    font-family: 'Roman-Antique';
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    text-shadow: 3px 3px 3px white;
+}
