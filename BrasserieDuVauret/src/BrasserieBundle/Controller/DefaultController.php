@@ -113,11 +113,8 @@ class DefaultController extends Controller
         'form' => $form->createView()));
     }
 
-
-
-
 /**
- * @Route("/mentions")
+ * @Route("/mentions", name="mentions")
  */
 public function mentionsAction()
 {
