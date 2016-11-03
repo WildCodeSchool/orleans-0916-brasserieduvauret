@@ -7,8 +7,8 @@ iframe {
     font-size: 25px;
     margin-left: auto;
 }
-.playimg {
-    width:400px;
+.imgplay {
+    width:200px;
 }
 .playtitle {
     font-family: 'Roman-Antique';
@@ -16,4 +16,9 @@ iframe {
     font-size: 60px;
     color: black;
     text-shadow: 3px 3px 3px white;
+}
+.textplay {
+    text-align: justify;
+    font-family: candelabook;
+    font-size: 25px;
 }
