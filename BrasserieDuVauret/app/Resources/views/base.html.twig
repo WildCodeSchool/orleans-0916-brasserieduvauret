@@ -1,157 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>{% block head %}
 
+<head> {% block head %}
         <meta charset="UTF-8" />
-        <title>{% block title %}
-                Brasserie du Vauret
-               {% endblock %}
-        </title>
+        <title>{% block title %} Brasserie du Vauret {% endblock %} </title> {% block stylesheets %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/jumbo.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/map.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/3ronds.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('CSS/contact.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/formulaire.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('CSS/pointsdevente.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{'CSS/content.css'}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('CSS/stylenavbar.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/fonts.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('CSS/footer.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> {% endblock %} {% block javascripts %}
+        <script src="{{ asset ('js/bootstrap.min.js')}}"></script> {% endblock %}
+        <link rel="icon" type="image/png" sizes="16x16" href="{{'img/favicon-16x16.png'}}"> {% endblock %} </head>
 
-        {% block stylesheets %}
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/jumbo.css')}}">
-            <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/map.css')}}">
-            <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/3ronds.css')}}">
-            <link rel="stylesheet" type="text/css" href="{{ asset('CSS/contact.css') }}">
-            <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/formulaire.css')}}">
-            <link rel="stylesheet" type="text/css" href="{{ asset('CSS/pointsdevente.css') }}" />
-            <link rel="stylesheet" type="text/css" href="{{'CSS/content.css'}}">
-            <link rel="stylesheet" type="text/css" href="{{ asset('CSS/stylenavbar.css')}}">
-            <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
-            <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/fonts.css')}}">
-            <link rel="stylesheet" type="text/css" href="{{ asset('CSS/footer.css')}}">
-            <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-        {% endblock %}
-
-        {% block javascripts %}
-            <script src="{{ asset ('js/bootstrap.min.js')}}"></script>
-        {% endblock %}
-
-        <link rel="icon" type="image/png" sizes="16x16" href="{{'img/favicon-16x16.png'}}">
-
-
-    </head>{% endblock %}
-
-    <body>
-
-
-        {% block body %}
-
-            {% block header %}
-
-                <script>
-                    $(document).ready(function () {
-                        $(".navbar-toggle").on("click", function () {
-                            $(this).toggleClass("active");
-                        });
-                    });
-                </script>
-
-                <div class="navbar navbar navbar-fixed" >
-
-                    <div class="navbar-header">
-
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
-                        </button>
-
-                        <a class="navbar-brand" href="http://localhost/atelierPHP/atelier_php/projet_brasserie/BrasserieDuVauret/web/app_dev.php"> <img src="{{ asset('img/logo.png')}}"  alt="Logo de la brasserie du vauret" class="img-responsive logo" />
-                        </a>
-
-                    </div>
-
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li role="presentation" class="active"><a class="onglet" href="{{ path('accueil') }}">Accueil</a></li>
-                            <li class="active"><a class="onglet" href="{{ path('bieres') }}">Bières</a></li>
-                            <li class="active"><a class="onglet" href="{{ path('brasserie') }}">Brasserie</a></li>
-                            <li class="active"><a class="onglet" href="{{ path('pointsdevente') }}">Points de vente</a></li>
-                            <li class="active"><a class="onglet" href="{{ path('actualites') }}">Actualités</a></li>
-                            <li class="active"><a class="onglet" href="{{ path('contact') }}">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            {% endblock %}
-
-
-        {% block footer %}
+<body>
+{% block body %}
+    {% block header %}
+        <div class="navbar navbar navbar-fixed">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="{{ path('accueil') }}"> <img src="{{ asset('img/logo.png')}}" alt="Logo de la brasserie du vauret" class="img-responsive logo" /> </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation" class="active"><a class="onglet" href="{{ path('accueil') }}">Accueil</a></li>
+                    <li class="active"><a class="onglet" href="{{ path('bieres') }}">Bières</a></li>
+                    <li class="active"><a class="onglet" href="{{ path('brasserie') }}">Brasserie</a></li>
+                    <li class="active"><a class="onglet" href="{{ path('pointsdevente') }}">Points de vente</a></li>
+                    <li class="active"><a class="onglet" href="{{ path('actualites') }}">Actualités</a></li>
+                    <li class="active"><a class="onglet" href="{{ path('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    {% endblock %}
+    {% block footer %}
         <div class="container-fluid foot-back">
             <div class="row">
                 <div class="col-lg-3 foot-bloc1">
                     <h2 class="foot-menu">Plan du site</h2>
-
                     <ul>
-                        <li class="foot_list">
-                            <a class="liste_menu" href="{{ path('accueil') }}">Accueil</a>
-                        </li>
-                        <li class="foot_list">
-                            <a class="liste_menu" href="{{ path('bieres') }}">Nos bières</a>
-                        </li>
-                        <li class="foot_list">
-                        <a class="liste_menu" href="{{ path('brasserie') }}">La Brasserie</a>
-                        </li>
-                        <li class="foot_list">
-                            <a class="liste_menu" href="{{ path('pointsdevente') }}">Nos points de vente</a>
-                        </li>
-                        <li class="foot_list">
-                            <a class="liste_menu" href="{{ path('actualites') }}">Actualites</a>
-                        </li>
-                        <li class="foot_list">
-                            <a class="liste_menu" href="{{ path('contact') }}">Contact</a><br/>
-                        </li>
-
+                        <li class="foot_list"> <a class="liste_menu" href="{{ path('accueil') }}">Accueil</a> </li>
+                        <li class="foot_list"> <a class="liste_menu" href="{{ path('bieres') }}">Nos bières</a> </li>
+                        <li class="foot_list"> <a class="liste_menu" href="{{ path('brasserie') }}">La Brasserie</a> </li>
+                        <li class="foot_list"> <a class="liste_menu" href="{{ path('pointsdevente') }}">Nos points de vente</a> </li>
+                        <li class="foot_list"> <a class="liste_menu" href="{{ path('actualites') }}">Actualites</a> </li>
+                        <li class="foot_list"> <a class="liste_menu" href="{{ path('contact') }}">Contact</a>
+                            <br/> </li>
                     </ul>
-
                 </div>
-
                 <div class="col-lg-offset-1 col-lg-3 col-md-offset-4 col-md-4 col-sm-12 col-xs-12 foot-bloc2">
                     <h2 class="foot-menu">Brasserie du Vauret</h2>
-
                     <ul>
+                        <li class="foot_list"> 501 Rue du Vauret
+                            <br/> 45430 Mardié </li>
+                        <li class="foot_list"> 07 83 76 08 49 </li>
+                        <li class="foot_list"> cyril.bourassin[a]free.fr </li>
                         <li class="foot_list">
-                            501 Rue du Vauret <br/>
-                            45430 Mardié
+                            <a href="https://www.facebook.com/brasserieduvauret" target="_blank"><img class="foot-logofb" src="{{ asset('img/facebook.png')}}" alt="Logo Facebook"></a>
                         </li>
-                        <li class="foot_list">
-                            07 83 76 08 49
-                        </li>
-                        <li class="foot_list">
-                           cyril.bourassin[a]free.fr
-                        </li>
-                        <li class="foot_list">
-                            <a href="https://www.facebook.com/brasserieduvauret" target="_blank"><img class="foot-logofb" src="{{ asset('img/facebook.png')}}" alt="Logo Facebook" ></a></li>
-                        <li class="foot_list">
-                            <a class="liste-mention" href="#">Mentions Légales</a>
-                        </li>
+                        <li class="foot_list"> <a class="liste-mention" href="#">Mentions Légales</a> </li>
                     </ul>
-
                 </div>
-
                 <div class="col-lg-offset-2 col-lg-3 col-md-offset-4 col-md-4 col-sm-12 col-xs-12 foot-bloc3">
                     <div class="foot-contact">
                         <h2 class="foot-menu-news">Newsletter</h2>
-                        <p class="foot-news-text">Recevez notre newsletter<br/>en vous abonnant ici :</p>
-                        <div class="input-group foot-input">
-                           <span><input type="text" class="form-control" placeholder="Votre email">
-                             <button type="button" class="btn btn-warning">Envoyer</button></span>
+                        <p class="foot-news-text">Recevez notre newsletter
+                            <br/>en vous abonnant ici :</p>
+                        <div class="input-group foot-input"> {{ render(controller('VauretAdminBundle:News:news')) }}
                         </div>
                         <div class="wcs">
-                        <a href="http://www.wildcodeschool.fr/" target="_blank"><img class="foot-logowild" src="{{ asset('img/wildcodeschool.png')}}" alt="Logo wild code school" ></a></li>
+                            <a href="http://www.wildcodeschool.fr/" target="_blank"><img class="foot-logowild" src="{{ asset('img/wildcodeschool.png')}}" alt="Logo wild code school"></a>
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
-            {% endblock %}
-
-            {% endblock %}
         </div>
-    </body>
+    {% endblock %}
+{% endblock %}
+</body>
 
 </html>
-
-

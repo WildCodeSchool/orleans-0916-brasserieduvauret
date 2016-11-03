@@ -7,6 +7,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use BrasserieBundle\Entity\Enquiry;
 use BrasserieBundle\Form\EnquiryType;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 
 class DefaultController extends Controller
@@ -76,8 +77,9 @@ class DefaultController extends Controller
     {
         // just setup a fresh $task object (remove the dummy data)
         $enquiry = new Enquiry();
-
         $form = $this->createForm(EnquiryType::class, $enquiry);
+        $session = $request->getSession();
+        $session->start();
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -105,6 +107,9 @@ class DefaultController extends Controller
                                                                             )));
 
             $this->get('mailer')->send($message);
+            $session->getFlashBag()->add(
+                'warning',
+                'Votre message a bien été envoyé !');
 
             //return $this->render(...);
 

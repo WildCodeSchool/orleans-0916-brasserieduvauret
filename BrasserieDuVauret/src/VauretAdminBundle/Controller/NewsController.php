@@ -3,39 +3,37 @@
 namespace VauretAdminBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use VauretAdminBundle\Entity\email;
+use VauretAdminBundle\Entity\Mail;
 use VauretAdminBundle\Form\NewsType;
 use Symfony\Component\HttpFoundation\Request;
-
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 
 class NewsController extends Controller
 {
-    public function Action(Request $request)
+
+    /**
+     * @Route("/news", name="newslet")
+     */
+    public function newsAction(Request $request)
     {
-        $email = new email();
+        $email = new Mail();
 
         $form = $this->createForm(NewsType::class, $email);
 
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            // $form->getData() holds the submitted values
-            // but, the original `$actuality` variable has also been updated
 
-            $email = $form["email"]->getData();
-
-            // ... perform some action, such as saving the task to the database
-            // for example, if Actuality is a Doctrine entity, save it!
             $em = $this->getDoctrine()->getManager();
             $em->persist($email);
             $em->flush(); // envoi des données
 
             return $this->redirectToRoute('accueil');
-
-
-            return $this->render('', array('name' => $name));
         }
+
+        return $this->render('VauretAdminBundle:News:news.html.twig', array('form' =>$form->createView()));
+
 
     }
 

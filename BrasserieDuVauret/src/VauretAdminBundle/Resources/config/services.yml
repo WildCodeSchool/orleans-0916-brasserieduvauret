@@ -20,11 +20,11 @@ services:
             - ~
             - VauretAdminBundle\Entity\Actuality
             - ~
-    app.admin.mail:
+    app.adpin.mail:
         class: VauretAdminBundle\Admin\MailAdmin
         tags:
             - { name: sonata.admin, manager_type: orm, group: "Administration du site", label: "Mail" }
         arguments:
             - ~
-            - VauretAdminBundle\Entity\email
+            - VauretAdminBundle\Entity\Mail
             - ~

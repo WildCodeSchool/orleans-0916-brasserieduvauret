@@ -13,14 +13,14 @@ class NewsType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-               $builder->add('email', EmailType::class);
+               $builder->add('mail', EmailType::class, array('label' => false));
 
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-                'data_class' => 'VauretAdminBundle\Entity\email',
+                'data_class' => 'VauretAdminBundle\Entity\Mail',
             )
 
         );
