@@ -1,7 +1,7 @@
-VauretAdminBundle\Entity\email:
+VauretAdminBundle\Entity\Mail:
     type: entity
-    table: null
-    repositoryClass: VauretAdminBundle\Repository\emailRepository
+    table: mail
+    repositoryClass: VauretAdminBundle\Repository\MailRepository
     id:
         id:
             type: integer

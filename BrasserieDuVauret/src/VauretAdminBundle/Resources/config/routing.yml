@@ -1,3 +1,10 @@
 vauret_admin_homepage:
     path:     /
     defaults: { _controller: VauretAdminBundle:Default:index }
+
+vauret_admin_news:
+    path:     /news
+    defaults: { _controller: VauretAdminBundle:News:news }
+
+
+

@@ -5,9 +5,9 @@ namespace VauretAdminBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * email
+ * Mail
  */
-class email
+class Mail
 {
     /**
      * @var int
@@ -34,7 +34,7 @@ class email
      * Set mail
      *
      * @param string $mail
-     * @return email
+     * @return mail
      */
     public function setMail($mail)
     {
