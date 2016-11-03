@@ -23,6 +23,7 @@
     text-align: center;
     padding-bottom: 30px;
     font-family: 'Roman-Antique';
+    font-size: 40px;
 }
 .test {
     min-width: 300px;
@@ -35,7 +36,7 @@
 }
 .unetitle {
     font-family: 'Roman-Antique';
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
 }
 html,
@@ -82,10 +83,11 @@ body {
     color: white;
     text-shadow: 3px 3px 3px black;
 }
+/*
 .backune {
     background-image: url("../images/backactu.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-
+*/
 
