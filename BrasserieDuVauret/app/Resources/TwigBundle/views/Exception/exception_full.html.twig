@@ -1,4 +1,11 @@
 {% extends 'BrasserieBundle::layout.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('CSS/errorpage.css') }}" type="text/css" />
+
+{% endblock %}
+
 {% block body %}
     {% block header %}
         {{ parent() }}
@@ -6,7 +13,8 @@
 
 
         {% block content %}
-    {{ exception.message }} ({{ status_code }} {{ status_text }})
+            <img src="{{ asset('images/error404.jpg') }}" class="img404" alt="erreur 404" />
+           <a href="{{ path('accueil') }}"><h1 class="err404"> Page non trouvée, retour à l'accueil </h1></a>
         {% endblock %}
 
 

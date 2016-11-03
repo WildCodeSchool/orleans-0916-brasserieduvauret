@@ -1,4 +1,11 @@
 {% extends 'BrasserieBundle::layout.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('CSS/errorpage.css') }}" type="text/css" />
+
+{% endblock %}
+
 {% block body %}
     {% block header %}
         {{ parent() }}
@@ -6,7 +13,7 @@
 
 
         {% block content %}
-        <h1>Oops! An Error Occurred</h1>
+        <h1 class="error404">Oops! An Error Occurred</h1class>
         <h2>The server returned a "{{ status_code }} {{ status_text }}".</h2>
 
         <div>
