@@ -2,9 +2,7 @@
 
 {% block head %}
     {{ parent() }}
-
-    <link rel="stylesheet" href="{{ asset('CSS/lvdllb.css') }}" type="text/css" />
-
+    <link rel="stylesheet" href="{{ asset('CSS/lvdllb.css') }}" type="text/css">
 
 {% endblock %}
 
@@ -18,18 +16,18 @@
 
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-3">
-            <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=square&autoplay=true&playlist=true&width=500&height=500&color=007FEB&layout=dark&size=medium&type=playlist&id=2362538762&app_id=1" width="300" height="300"></iframe>
+    <div class="row marge">
+        <div class="col-lg-4">
+            <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=square&autoplay=true&playlist=true&width=300&height=300&color=007FEB&layout=dark&size=medium&type=playlist&id=2362538762&app_id=1" width="300" height="300"></iframe>
         </div>
-        <div class="col-lg-6 imgplay">
-            <img class="playimg" src="{{ asset ('images/avlblanche.JPG')}}" alt="La Brasserie">
-            <div class="col-lg-6">
+        <div class="col-lg-4">
+            <img class="img-responsive playimg" src="{{ asset ('images/avlblanche.JPG')}}" alt="La Brasserie">
+            </div>
+            <div class="col-lg-4">
             <h1 class="playtitle">La Vallée de la Loire - Blanche</h1>
             <p class="textplay">Cette bière s’inspire du style « Witbier » du nord de la France et Belgique. Brassée à partir de malt d’orge et de blé, l’ajout de coriandre et d’écorces d’orange lui confère des aromes rafraichissant d’agrume. Alc : 5.5° - Amertume : 10 IBU (très peu amère)</p>
         </div>
         </div>
-</div>
     </div>
         {% endblock %}
 
