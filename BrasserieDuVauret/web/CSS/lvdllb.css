@@ -1,19 +1,16 @@
-iframe {
-
-}
 .playtext {
     text-align: justify;
     font-family: candelabook;
     font-size: 25px;
     margin-left: auto;
 }
-.imgplay {
-    width:200px;
+.playimg {
+    width: 300px;
 }
 .playtitle {
     font-family: 'Roman-Antique';
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     color: black;
     text-shadow: 3px 3px 3px white;
 }
@@ -21,4 +18,7 @@ iframe {
     text-align: justify;
     font-family: candelabook;
     font-size: 25px;
+}
+.marge {
+    margin-bottom: 100px;
 }
