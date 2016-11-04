@@ -1,12 +1,22 @@
 
+<link rel="stylesheet" type="text/css" href="{{ asset ('CSS/bout.css')}}">
+
+
+
+
 {% form_theme form 'bootstrap_3_horizontal_layout.html.twig' %}
 
 
 {{ form_start(form, {'method':'POST', 'action':path('vauret_admin_news') }) }}
 
-    {{ form_widget(form) }}
 
-    <input type="submit" class="btn btn-warning" />
 
+<span class="input-group-btn">
+    <div class="bout">
+      {{ form_widget(form) }}>
+
+      <!---<button class="btn btn-default" type="button" ">Valider</button>
+      </span>---->
+</div>
 {{ form_end(form) }}
 
