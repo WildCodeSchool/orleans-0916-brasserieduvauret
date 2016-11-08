@@ -110,7 +110,7 @@ body {
     background-position: center center;
     background-size: cover;
     height: 800px;
-    width: auto;
+    width: 100%;
     padding: 0;
 }
 .inter_bloc2 {
@@ -120,14 +120,14 @@ body {
     background-position :center center;
     background-size: cover;
     height: 800px;
-    width: auto;
+    width: 100%;
     padding: 0;
 }
 .inter_bloc3 {
     background: url('./image/cheers.jpg') no-repeat fixed center center;
     background-size: cover;
     height: 800px;
-    width: auto;
+    width: 100%;
     padding: 0;
 }
 

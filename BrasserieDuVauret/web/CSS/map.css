@@ -7,7 +7,7 @@
 .map_accueil {
 
     margin : -15px;
-    width: 100%;
+
 }
 
 .maptitle {
@@ -21,6 +21,11 @@
     position: relative;
     z-index: 4;
     width: auto;
+}
+.mapcss {
+    width: 100%;
+    height: 680px;
+    Border: 0;
 }
 
 
