@@ -44,7 +44,7 @@ a:hover {
 
 .foot-back {
 	background-color: black;
-	width: 100%;
+	width: auto;
 
 }
 .foot-logofb {
@@ -88,5 +88,6 @@ li {
     margin-top: 15px;
     text-align: center;
 }
+
 
 
