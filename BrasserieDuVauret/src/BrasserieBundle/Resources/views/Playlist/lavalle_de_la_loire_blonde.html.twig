@@ -11,8 +11,20 @@
 
     {% block content %}
 
+    <div class="container-fluid">
+        <div class="row marge">
+            <div class="col-lg-4">
         <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=square&autoplay=true&playlist=true&width=300&height=300&color=007FEB&layout=dark&size=medium&type=playlist&id=2336156602&app_id=1" width="300" height="300"></iframe>    {% endblock %}
-
+            </div>
+            <div class="col-lg-4">
+                <img class="img-responsive playimg" src="{{ asset ('images/avlblonde.JPG')}}" alt="bière bio Brasserie du Vauret">
+            </div>
+            <div class="col-lg-4">
+                <h1 class="playtitle">L'Avallée de la Loire - Blonde</h1>
+                <p class="textplay">Cette bière est inspirée du style « Belgian blond ale », La blonde belge ! Une blonde équilibrée avec des aromes de miel et un nez d’agrume. Alc : 6° - Amertume : 12 IBU (très peu amère) </p>
+            </div>
+        </div>
+    </div>
     {% block footer %}
         {{ parent() }}
     {% endblock %}
