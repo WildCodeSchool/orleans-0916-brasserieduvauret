@@ -1,3 +1,7 @@
 .bout {
-    width: 300px;
+    display: inline-flex;
+    margin-left: 42px;
+}
+.btnnews {
+    height: 34px;
 }

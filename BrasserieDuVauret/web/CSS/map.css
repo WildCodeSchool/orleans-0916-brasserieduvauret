@@ -1,11 +1,13 @@
 .map_col {
     margin-bottom:-10px;
+    width: 100%;
 
 }
 
 .map_accueil {
 
     margin : -15px;
+    width: 100%;
 }
 
 .maptitle {
@@ -18,4 +20,5 @@
     margin-top: 0;
     position: relative;
     z-index: 4;
+    width: 100%;
 }

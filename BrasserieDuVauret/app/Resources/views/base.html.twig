@@ -17,9 +17,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('CSS/stylenavbar.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/fonts.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('CSS/content.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('CSS/footer.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('CSS/lvdllb.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('CSS/content.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> {% endblock %}
 
     {% block javascripts %}
@@ -80,7 +80,10 @@
 
                         <p class="foot-news-text">Recevez notre newsletter
                             <br/>en vous abonnant ici :</p>
+                        <div class="bouton_news">
                        {{ render(controller('VauretAdminBundle:News:news')) }}
+
+                            </div>
                         <div class="wcs">
                             <a href="http://www.wildcodeschool.fr/" target="_blank"><img class="foot-logowild" src="{{ asset('img/wildcodeschool.png')}}" alt="Logo wild code school"></a>
                         </div>

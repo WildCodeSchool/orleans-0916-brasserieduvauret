@@ -16,7 +16,7 @@
     color : white;
     font-family: 'Roman-Antique';
     font-size:35px;
-    margin:auto;
+
 
 }
 
@@ -44,6 +44,7 @@ a:hover {
 
 .foot-back {
 	background-color: black;
+	width: 100%;
 
 }
 .foot-logofb {
