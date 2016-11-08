@@ -32,7 +32,6 @@
                         </a>
                         <h2 class="unemoment">Bière du moment</h2>
                     </div>
-
                 {% endfor %}
 
 
@@ -58,48 +57,12 @@
             <h1 class="slogan2">"Nous produisons des bières bio en flux détendu"</h1>
         </div>
 
-        <!------Bouton ascenceur-----
-        <div class="container">
-
-                <a href="#" title="Haut de page" class="scrollup"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></a>
-        </div>
-        ------fin bouton----------->
-
     {% endblock %}
 
     {% block footer %}
         {{ parent() }}
     {% endblock %}
 
-
-    <div class="up">
-       <script>
-               ScrollToTop=function() {
-               var s = $(window).scrollTop();
-               if (s > 4800) {
-                   $('.scrollup').fadeIn();
-               } else {
-                   $('.scrollup').fadeOut();
-               }
-
-               $('.scrollup').click(function () {
-                   $("html, body").animate({ scrollTop: 0 }, 500);
-                   return false;
-               });
-           }
-
-           StopAnimation=function() {
-               $("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(){
-                   $('html, body').stop();
-               });
-           }
-
-
-           $(window).scroll(function() {
-               ScrollToTop();
-               StopAnimation();
-           });
-       </script>
 
     </div>
 
