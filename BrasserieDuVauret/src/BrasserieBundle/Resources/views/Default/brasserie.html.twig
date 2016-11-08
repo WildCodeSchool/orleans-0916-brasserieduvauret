@@ -1,6 +1,12 @@
 {% extends 'BrasserieBundle::layout.html.twig' %}
 
-{% block stylesheets %}
+{% block head %}
+    <meta name="keywords" content="bière, bio, orleans, brasserie, mardie, biere, mardié, biére, biologique, alcool, artisan, artisanal, visite" />
+    <meta name="author" content="Brasserie du Vauret" />
+    <meta name="title" content="A la rencontre de la Brasserie du Vauret" />
+    <meta name="description" content="La Brasserie du Vauret vous propose de découvrir son savoir-faire dans ses ateliers ." />
+    <meta name="DC.subject" content="bière, bio, orleans, brasserie, mardie, biere, mardié, biére, biologique, alcool, artisan, artisanal, visite" />
+    {{ parent() }}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('CSS/brasserie.css') }}" type="text/css" />
 {% endblock %}

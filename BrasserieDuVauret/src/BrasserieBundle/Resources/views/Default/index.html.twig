@@ -1,8 +1,18 @@
 {% extends 'BrasserieBundle::layout.html.twig' %}
 
+{% block head %}
+    <meta name="keywords" content="bière, bio, orleans, brasserie, mardie, biere, mardié, biére, biologique, alcool, artisan, artisanal, visite" />
+    <meta name="author" content="Brasserie du Vauret" />
+    <meta name="title" content="Brasserie du Vauret - fabrication de bières artisanales issues de l'agriculture biologique" />
+    <meta name="description" content="La Brasserie du Vauret est une micro-brasserie artisanale localisée à Mardié, près d'Orléans dans le Loiret proposant de nombreuses bières isssues de l'agriculture biologique." />
+    <meta name="DC.subject" content="bière, bio, orleans, brasserie, mardie, biere, mardié, biére, biologique, alcool, artisan, artisanal, visite" />
+    {{ parent() }}
+{% endblock %}
+
 {% block body %}
     {% block header %}
         {{ parent() }}
+
     {% endblock %}
 
     {% block content %}
