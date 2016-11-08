@@ -21,7 +21,6 @@ class ProduitsAdmin extends AbstractAdmin
     {
         $formMapper
             ->add('nom')
-            ->add('slug')
             ->add('contenu')
             ->add('file', 'file', array(
                 'required' => false))
@@ -63,7 +62,6 @@ class ProduitsAdmin extends AbstractAdmin
     {
         $datagridMapper
             ->add('nom')
-            ->add('slug')
             ->add('contenu')
             ->add('filename')
             ->add('une')
@@ -75,7 +73,6 @@ class ProduitsAdmin extends AbstractAdmin
     {
         $listMapper
             ->addIdentifier('nom')
-            ->add('slug')
             ->add('contenu')
             ->add('filename')
             ->add('une')
@@ -95,7 +92,6 @@ class ProduitsAdmin extends AbstractAdmin
         $showMapper
             ->add('id')
             ->add('nom')
-            ->add('slug')
             ->add('contenu')
             ->add('filename')
             ->add('une')
