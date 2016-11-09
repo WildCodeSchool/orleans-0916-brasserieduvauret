@@ -107,7 +107,7 @@ body {
     background-image: url('./image/houblon.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 650px;
+    height: 850px;
     width: 100%;
     margin: auto;
 
@@ -116,7 +116,7 @@ body {
     background-image: url('./image/orge.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 650px;
+    height: 850px;
     width: 100%;
     margin: auto;
 
@@ -125,7 +125,8 @@ body {
     background: url('./image/cheers.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 650px;
+    height: 850px;
     width: 100%;
+    max-height: 850px;
 }
 
