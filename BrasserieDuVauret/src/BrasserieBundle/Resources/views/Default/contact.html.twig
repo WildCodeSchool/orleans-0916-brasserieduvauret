@@ -1,9 +1,13 @@
 {% extends 'BrasserieBundle::layout.html.twig' %}
 {% form_theme form 'bootstrap_3_horizontal_layout.html.twig' %}
 
-{% block stylesheets %}
+{% block head %}
+    <meta name="keywords" content="bière, bio, orleans, brasserie, mardie, biere, mardié, biére, biologique, alcool, artisan, artisanal, visite" />
+    <meta name="author" content="Brasserie du Vauret" />
+    <meta name="title" content="Contacter la Brasserie du Vauret" />
+    <meta name="description" content="Une question sur la micro-brasserie? Professionnels, vous souhaitez devenir distributeur de nos bières bio ? N'hésitez pas à poser une question à la Brasserie du Vauret." />
+    <meta name="subject" content="bière, bio, orleans, brasserie, mardie, biere, mardié, biére, biologique, alcool, artisan, artisanal, visite" />
     {{ parent() }}
-
 {% endblock %}
 
 

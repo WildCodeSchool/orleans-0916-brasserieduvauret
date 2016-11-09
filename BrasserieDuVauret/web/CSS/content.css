@@ -1,23 +1,4 @@
-/** ScrollToTop
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 10px;
-    right: 50px;
-    display: none;
-    color: white;
-    background-color: #3a3f51;
-    border: 1px solid #3a3f51;
-    font-size: 20px;
-    text-align: center;
-    line-height: 37px;
-    border-radius: 60px;
-}
 
-.scrollup:hover {
-    color: white;
-}
-*/
 .titre_actu{
     text-align: center;
     font-family: 'Roman-Antique';
@@ -79,13 +60,7 @@ body {
     text-shadow: 3px 3px 3px black;
     text-align: center;
 }
-/*
-.backune {
-    background-image: url("../images/backactu.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-*/
+
 .heightfb {
     height: 300px;
 }

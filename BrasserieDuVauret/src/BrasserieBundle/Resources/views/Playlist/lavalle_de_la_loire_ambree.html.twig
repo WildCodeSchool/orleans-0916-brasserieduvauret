@@ -10,7 +10,20 @@
     {% endblock %}
 
     {% block content %}
-        <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=square&autoplay=true&playlist=true&width=300&height=300&color=007FEB&layout=dark&size=medium&type=playlist&id=2362537342&app_id=1" width="300" height="300"></iframe>
+        <div class="container-fluid">
+            <div class="row marge">
+                <div class="col-lg-4">
+                    <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=square&autoplay=true&playlist=true&width=300&height=300&color=007FEB&layout=dark&size=medium&type=playlist&id=2362537342&app_id=1" width="300" height="300"></iframe>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-responsive playimg" src="{{ asset ('images/avlambre.JPG')}}" alt="bière bio Brasserie du Vauret">
+                </div>
+                <div class="col-lg-4">
+                    <h1 class="playtitle">L'Avallée de la Loire - Ambrée</h1>
+                    <p class="textplay">Cette bière s’inspire du style « Bière ambrée de garde » du nord de la France et Belgique. Une ambrée au léger gout malté. Elle développe un arome subtil de biscuit et de noix. Alc : 6° - Amertume : 18 IBU (peu amère)</p>
+                </div>
+            </div>
+        </div>
     {% endblock %}
 
 
