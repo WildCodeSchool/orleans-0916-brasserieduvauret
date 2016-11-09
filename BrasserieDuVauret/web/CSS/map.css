@@ -21,11 +21,9 @@
     position: relative;
     z-index: 4;
     width: auto;
+    height: auto;
 }
-.mapcss {
-    width: 100%;
-    height: 680px;
-    Border: 0;
-}
+
+
 
 

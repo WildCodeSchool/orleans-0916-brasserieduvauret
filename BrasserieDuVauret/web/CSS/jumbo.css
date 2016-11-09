@@ -107,30 +107,30 @@ body {
     background-image: url('./image/houblon.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 600px;
+    height: 650px;
     width: 100%;
-    padding: 0;
+    margin: auto;
+
 }
 .inter_bloc2 {
     background-image: url('./image/orge.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position :center center;
-    background-size: cover;
-    height: 600px;
+    height: 650px;
     width: 100%;
-    padding: 0;
+    margin: auto;
+
 }
 .inter_bloc3 {
-    background: url('./image/cheers.jpg') no-repeat fixed center center;
-    background-size: cover;
-    height: 600px;
+    background: url('./image/cheers.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 650px;
     width: 100%;
+    margin: 0;
     padding: 0;
+    min-height: 650px;
+    max-height: 650px;
+
 }
 
-
-
-/*test*/

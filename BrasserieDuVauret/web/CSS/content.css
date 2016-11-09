@@ -23,9 +23,8 @@
     font-family: 'Roman-Antique';
     font-size: 40px;
 }
-.test {
-    min-width: 300px;
-}
+
+
 .imgune {
     margin-bottom: 10px;
     height: 500px;
@@ -88,6 +87,8 @@ body {
 }
 */
 .heightfb {
-    height: 400px;
+    height: 300px;
 }
+
+
 
