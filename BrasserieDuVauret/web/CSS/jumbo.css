@@ -109,7 +109,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 800px;
+    height: 600px;
     width: 100%;
     padding: 0;
 }
@@ -119,14 +119,14 @@ body {
     background-repeat: no-repeat;
     background-position :center center;
     background-size: cover;
-    height: 800px;
+    height: 600px;
     width: 100%;
     padding: 0;
 }
 .inter_bloc3 {
     background: url('./image/cheers.jpg') no-repeat fixed center center;
     background-size: cover;
-    height: 800px;
+    height: 600px;
     width: 100%;
     padding: 0;
 }
