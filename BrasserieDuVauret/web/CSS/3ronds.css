@@ -26,10 +26,10 @@ h4 {
   width: 100%;
 }
 .ch-grid li {
-  width: 260px;
-  height: 260px;
+  width: 220px;
+  height: 220px;
   display: inline-block;
-  margin: 2% 9% 9% 9%;
+  margin: 2% 6% 9% 6%;
 }
 .ch-grid:before, .ch-grid:after {
   content: '';
@@ -155,7 +155,7 @@ h4 {
 .flip-img {
   height: 170px;
   width: 170px;
-  margin-top: 12%;
+  margin-top: 7%;
 }
 .flip-title {
   text-align: center;
